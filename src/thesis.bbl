@@ -1,0 +1,259 @@
+\begin{thebibliography}{1}\setlength{\itemsep}{-1ex}\small
+
+\bibitem{alstott}
+J. Alstott, E. Bullmore, and D. Plenz. Powerlaw: a Python package for analysis of heavy-tailed distributions. PLoS ONE 9(1): e85777, 2014.
+
+\bibitem{asanovic}
+Krste Asanovic, Ras Bodik, Bryan Christopher Catanzaro, Joseph James Gebis, Parry Husbands, Kurt Keutzer, David A. Patterson, William Lester Plishker, John Shalf, Samuel Webb Williams, and
+Katherine A. Yelick. The Landscape of Parallel Computing Research: A View from Berkeley. Technical Report No. UCB/EECS-2006-183, EECS Department, University of California, Berkeley.
+
+\bibitem{bader}
+D. A. Bader, V. Agarwal, K. Madduri. On the Design and Analysis of Irregular Algorithms on the Cell Processor: A Case Study of List Ranking. IPDPS, 2007.
+
+\bibitem{baderGTgraph}
+D. A. Bader, and K. Madduri. GTgraph: A suite of synthetic graph
+generators. Available at https://sdm.lbl.gov/∼kamesh/software/GTgraph/
+
+\bibitem{banerjeeHIPC}
+D. S. Banerjee, K. Kothapalli. Hybrid algorithms for list ranking and graph connected components. HiPC, 2011.
+
+\bibitem{banerjeeIPDPSW}
+D. S. Banerjee, P. Sakurikar, and K. Kothapalli. Fast, scalable parallel comparison sort on hybrid multi-core architectures. In Proceedings of IPDPS Workshops, 2013.
+
+\bibitem{banerjeeHIPC13}
+D. S. Banerjee, S. Sharma, and K. Kothapalli. Work efficient parallel algorithms for large graph exploration. HiPC 2013.
+
+\bibitem{baskaran}
+M. Baskaran, and R. Bordawekar. Optimizing sparse matrix-vector multiplication on GPUs using compile-time and run-time strategies. Technical report, IBM Technical Report, 2008.
+
+\bibitem{bellNVR}
+N. Bell, and M. Garland. Efficient sparse matrix-vector multiplication on CUDA. NVIDIA Technical Report, 2008
+
+\bibitem{bellSC}
+N. Bell, and M. Garland. Implementing sparse matrix-vector multiplication on throughput-oriented processors. In Proceedings of SC, 2009.
+
+\bibitem{blellochPPOPP}
+G. E. Blelloch, J. C. Hardwick, S. Chatterjee, J. Sipelstein, and M. Zagha. Implementation of a portable nested data-parallel language. In Proceedings of PPOPP, 1993.
+
+\bibitem{blellochTR}
+G. E. Blelloch, M. A. Heroux, and M. Zagha. Segmented operations for sparse matrix computation on vector multiprocessors. Technical report, Pittsburgh, PA, USA, 1993.
+
+\bibitem{boyer}
+M. Boyer, K. Skadron, S. Che, and N. Jayasena. Load Balancing in a
+Changing World: Dealing with Heterogeneity and Performance Variability. In Proceedings of ACM Computing Frontiers, 2013.
+
+\bibitem{buluc}
+Aydin Buluc and John R. Gilbert. Challenges and advances in parallel sparse matrix-matrix multiplication. In The 37th International Conference on Parallel Processing (ICPP), 2008.
+
+\bibitem{choi}
+J. W. Choi, A. Singh, and R. W. Vuduc. Model-driven autotuning of sparse matrix-vector multiply on GPUs. In Proceedings of PPoPP, 2010.
+
+\bibitem{chhugani}
+J. Chhugani, N. Satish, Changkyu Kim, J. Sewall, P. Dubey. Fast and Efficient Graph Traversal Algorithm for CPUs: Maximizing Single-Node Efficiency. IPDPS, 2012.
+
+\bibitem{cormen}
+T. Cormen, C. Leiserson, R. Rivest, and C. Stein. Introduction to
+algorithms. MIT Press, 2001
+
+\bibitem{cullum}
+J.K. Cullum, and R.A. Willoughby. Lanczos Algorithms for Large Symmetric Eigenvalue Computations. Birkhauser, 1985.
+
+\bibitem{davis}
+T. A. Davis. Direct Methods for Sparse Linear Systems. Society for Industrial and Applied Mathematics, 2006.
+
+\bibitem{deLorimier}
+M. deLorimier, and A. DeHon. Floating-point Sparse Matrix-Vector Multiply for FPGAs. FPGA, 2005.
+
+\bibitem{demmel}
+J. W. Demmel. Applied Numerical Linear Algebra. Society for Industrial and Applied Mathematics, 1997.
+
+\bibitem{garland}
+M. Garland. Sparse matrix computations on many-core GPUs. In Proceedings of DAC, 2008.
+
+\bibitem{geijn}
+R. A. V. D. Geijn, and J. Watts. SUMMA: Scalable universal matrix multiplication algorithm. Concurrency: Practice and Experience, 1997.
+
+\bibitem{gharaibeh}
+A. Gharaibeh, L. B. Costa, E. Santos-Neto, and M. Ripeanu. On graphs, GPUs, and blind dating: A workload to processor matchmaking quest. In Proceedings of IEEE IPDPS, 2013.
+
+\bibitem{gilbert}
+J. R. Gilbert, C. Moler, and R. Schreiber. Sparse matrices in Matlab: Design and implementation. SIAM Journal of Matrix Analysis and Applications, 1992.
+
+\bibitem{golub}
+G.H. Golub, and C.F. Van Loan. Matrix Computations. 2nd edition. Johns Hopkins University Press, Baltimore, 1989.
+
+\bibitem{gregg}
+C. Gregg, M. Boyer, K. Hazelwood, and K. Skadron. Dynamic
+heterogeneous scheduling decisions using historical runtime data. in
+Workshop on Applications for Multi- and Many-Core Processors, 2011.
+
+\bibitem{greiner}
+J. Greiner. A comparison of parallel algorithms for connected components. In Proceedings of SPAA, 1994.
+
+\bibitem{grewe}
+D. Grewe and Michael F. P. O’Boyle. A Static Task Partitioning Approach for Heterogeneous Systems Using openCL. In International Conference on Compiler Construction, 2011.
+
+\bibitem{gustavson}
+F. Gustavson. Two fast algorithms for sparse matrices: multiplication and permuted transposition. ACM Transactions on Mathematical Software (TOMS), 1978.
+
+\bibitem{hirschberg}
+D. S. Hirschberg, A. K. Chandra, D. V .Sarwate. Computing connected components in parallel computers. Communications of the ACM, 1979.
+
+\bibitem{hongPACT}
+Sungpack Hong, T. Oguntebi, K. Olukotun. Efficient Parallel Graph Exploration on Multi-Core CPU and GPU. PACT, 2011
+
+\bibitem{hongSC}
+S. Hong, N. C. Rodia, and K. Olukotun. On Fast Parallel
+Detection of Strongly Connected Components (SCC) in Small-World
+Graphs. In Proceedings of SC, 2013.
+
+\bibitem{hou}
+Q. Hou, K. Zhou, and B. Guo. SPAP: A programming language for heterogeneous many-core systems. Technical report, Zhejiang University, Graphics and Parallel Systems Lab, 2010.	
+
+\bibitem{indarapu}
+S. Indarapu, M. Maramreddy, and K. Kothapalli. Architecture- and Workload-aware algorithms for Spare Matrix-Vector Multiplication. ACM Compute, 2014.
+
+\bibitem{koer}
+K. Koer, I. Grasso, B. Cosenza, and T. Fahringer. An Automatic Input-Sensitive Approach for Heterogeneous Task Partitioning. In ACM ICS, 2013.
+
+\bibitem{kothapalli}
+K. Kothapalli, S. Indarapu, S. Sharma, D. S. Banerjee, and R. Nigam. Workload Aware Algorithms for Heterogeneous Platforms, Under Submission, Available at http://cstar.iiit.ac.in/kkishore/workqueue.pdf, 2013
+
+\bibitem{lan}
+Zhiling Lan, Valerie E. Taylor, and Greg Bryan. A novel dynamic load balancing scheme for parallel systems. JPDC, 2002.
+
+\bibitem{lee}
+Victor W. Lee, Changkyu Kim, Jatin Chhugani, Michael Deisher, Daehyun Kim, Anthony D. Nguyen, Nadathur Satish, Mikhail Smelyanskiy, Srinivas Chennupaty, Per Hammarlund, Ronak Singhal, and Pradeep Dubey. Debunking the 100X GPU vs. CPU myth: an evaluation of throughput computing on CPU and GPU. In Proceedings of the 37th annual international symposium on Computer architecture. ISCA 2010. 
+
+\bibitem{leskovecKDD}
+J. Leskovec, J. Kleinberg, and C. Faloutsos. Graphs over time: densification laws, shrinking diameters and possible explanations. In Proceedings of ACM SIGKDD, 2005.
+
+\bibitem{leskovecIM}
+J. Leskovec, K. Lang, A. Dasgupta, and M. Mahoney. Community structure in large networks: Natural cluster sizes and the absence of large well-defined clusters. Internet Mathematics, 2009.
+
+\bibitem{ltaief}
+H. Ltaief, S. Tomov, R. Nath, and J. Dongarra. Hybrid Multicore Cholesky Factorization with Multiple GPU Accelerators. IEEE Transactions on Parallel and Distributed Computing, 2010.
+
+\bibitem{luk}
+C. K. Luk, S. Hong, and H. Kim. Qilin: Exploiting Parallelism on Heterogeneous Multiprocessors with Adaptive Mapping. In Proceedings of International Symposium on Microarchitecture (MICRO), 2009.
+
+\bibitem{matamICPP}
+K. K. Matam, K. Kothapalli. Accelerating Sparse Matrix Vector Multiplication in Iterative Methods Using GPU. ICPP, 2011.
+
+\bibitem{matamHiPC}
+K. K. Matam, S. B. Indarapu, and K. Kothapalli. Sparse matrix-matrix multiplication on modern architectures. HiPC, 2012.
+
+\bibitem{monakovSAMOS}
+A. Monakov and A. Arutyun. Implementing Blocked Sparse Matrix-Vector Multiplication on NVIDIA GPUs. In Proceedings of SAMOS, 2009.
+
+\bibitem{monakovHiPEAC}
+A. Monakov, A. Avetisyan, and A. Lokhmotov. Automatically tuning sparse matrix-vector multiplication for GPU Architectures. In Proceedings of HiPEAC, 2010.
+
+\bibitem{motwani}
+R. Motwani, and P. Raghavan. Randomized Algorithms. Cambridge University Press, 2000.
+
+\bibitem{park}
+S. C. Park, J. P. Draayer, and S. Q. Zheng. Fast sparse matrix multiplication. Computer Physics Communications, 1992.
+
+\bibitem{pawan}
+Pawan Harish, and P. Narayanan. Accelerating Large Graph Algorithms on the GPU Using CUDA. In Proceedings of HiPC, 2007.
+
+\bibitem{penn}
+G. Penn. Efficient transitive closure of sparse matrices over closed semi-rings. Theoretical Computer Science, 2006.
+
+\bibitem{press}
+W.H. Press, S.A. Teukolsky, W.T. Vetterling, and B.P. Flannery. Numerical Recipes, The Art of Scientific Computing. 2nd edition. Cambridge University Press, 1992.
+
+\bibitem{rabin}
+M. O. Rabin and V. V. Vazirani. Maximum matchings in general graphs through randomization. Journal of Algorithms, 1989.
+
+\bibitem{satish}
+N. Satish, M. Harris, and M. Garland. Designing efficient sorting algorithms for many-core GPUs. In Proceedings of IPDPS, 2009.
+
+\bibitem{scarpazza}
+D. P. Scarpazza, O. Villa, and F. Petrini. Efficient Breadth-First Search on the Cell/BE Processor. IEEE Transactions on Parallel Distributed Systems, 2008.
+
+\bibitem{sengupta}
+Shubhabrata Sengupta, Mark Harris, Yao Zhang, and John D. Owens. 2007. Scan primitives for GPU computing. In Proceedings of GH, 2007.
+
+\bibitem{shan}
+Y. Shan, W. Tianji, Y. Wang, B. Wang, Z. Wang, N. Xu, and H. Yang. FPGA and GPU implementation of large scale SpMV. SASP, 2010.
+
+\bibitem{shen}
+J. Shen, A. L. Varbanescu, P. Zou, Y. Lu, and H. Sips. Improving Performance by Matching Imbalanced Workloads with Heterogeneous
+Platforms. In Proceedings of ACM ICS, 2014.
+
+\bibitem{shiloach}
+Y. Shiloach, and U. Vishkin. An O(log n) parallel connectivity algorithm. Journal of Algorithms, 1982.
+
+\bibitem{siegel}
+J. Siegel, O. Villa, S. Krishnamoorthy, A. Tumeo, Xiaoming Li. Efficient sparse matrix-matrix multiplication on heterogeneous high performance systems. Cluster Computing Workshops and Posters, IEEE 2010.
+
+\bibitem{soman}
+J. Soman, K. Kothapalli, and P. J. Narayanan. Some GPU Algorithms for Graph Connected Components and Spanning Tree, Parallel Processing Letters, 2010
+
+\bibitem{song}
+Fengguang Song, Asim YarKhan, and Jack Dongarra. Dynamic task scheduling for linear algebra algorithms on distributed-memory multi-core systems. In Proceedings of the Conference on
+High Performance Computing Networking, Storage and Analysis, 2009.
+
+\bibitem{sulatycke}
+P. D. Sulatycke, K. Ghose. Caching-efficient multi-threaded fast multiplication of sparse matrices. In Proceedings of IPDPS, 1998.
+
+\bibitem{tomov}
+S. Tomov, J. Dongarra, and M. Baboulin. Towards dense liner algebra for hybrid GPU accelerated many-core systems. Parallel Computing, 2009.
+
+\bibitem{volkov}
+V. Volkov, and J.W. Demmel. Benchmarking GPUs to tune dense linear algebra. In Proceedings of SC, 2008.
+
+\bibitem{vuduc}
+R. Vuduc. Automatic performance tuning of sparse matrix kernels. PhD thesis, UC Berkeley, USA, December 2003.
+
+\bibitem{wang}
+G. Wang and X. Ren. Power-efficient work distribution method for CPU-GPU heterogeneous system. In Proceedings of ISPA, 2010
+
+\bibitem{wei}
+Zheng Wei, and Joseph JaJa. Optimization of linked list prefix computations on multi-threaded GPUs using CUDA. In Proceedings of IPDPS 2010.
+
+\bibitem{williams}
+S. Williams, L. Oliker, R. Vuduc, J. Shalf, K. Yelick, and J. Demmel. Optimization of sparse matrix-vector multiplication on emerging multi-core platforms. In Proceedings of ACM SC, 2007.
+
+\bibitem{yamazaki}
+I. Yamazaki, Tingxing Dong, S. Tomov, J. Dongarra. Tri-diagonalization of a Symmetric Dense Matrix on a GPU Cluster. IPDPSW, 2013
+
+\bibitem{yang}
+X. Yang, S. Parthasarathy, and P. Sadayappan, Fast Sparse Matrix-Vector Multiplication on GPUs: Implications for Graph Mining. In Proceedings of VLDB, 2011.
+
+\bibitem{yuster}
+R. Yuster, and U. Zwick. Fast sparse matrix multiplication. ACM Transactions on Algorithms, 2005
+
+\bibitem{zhou}
+L. Zhuo, V. K. Prasanna. Scalable and modular algorithms for floating-point matrix multiplication on FPGAs. In Proceedings of IPDPS, 2004.
+
+\bibitem{zwick}
+U. Zwick. All pairs shortest paths using bridging sets and rectangular matrix multiplication. Journal of the ACM, 2002.
+
+\bibitem{top500}
+The Top 500 Super-computing sites. Available at http://www.top500.org
+
+\bibitem{davisUFL}
+Timothy A. Davis, The University of Florida Sparse Matrix Collection, In Proceedings of NA DIGEST 1994.
+
+\bibitem{SNAP}
+Stanford Network Analysis Platform Dataset. http://www.cise.ufl.edu/research/sparse/matrices/SNAP/
+
+\bibitem{openMP}
+openMP Application Programming Interface. https://computing.llnl.gov/tutorials/openMP/
+
+\bibitem{CUDA}
+CUDA: Compute unified device architecture programming guide. Technical report, NVIDIA.
+
+\bibitem{mkl}
+Intel Math Kernel Library. http://software.intel.com/en-us/articles/intel-mkl/
+
+\bibitem{cusp}
+nVidia cusp-library. http://cusplibrary.github.io/
+
+\bibitem{cusparse}
+nVidia cusparse Library. http://developer.nvidia.com/cusparse/
+
+\end{thebibliography}

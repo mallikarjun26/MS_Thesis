@@ -1,0 +1,38 @@
+Multiplying two sparse matrices, denoted spmm, is a fundamental operation in linear algebra with several applications. Hence, efficient and scalable implementation of spmm has been a topic of immense research. Recent efforts are aimed at implementations on GPUs, multicore architectures, FPGAs, and such emerging computational platforms. Owing to the highly irregular nature of spmm, it is observed that GPUs and CPUs can offer comparable performance (Lee et al. \cite{lee}). 
+
+In this paper, we study CPU+GPU heterogeneous algorithms for spmm where the matrices exhibit a scale-free nature. Focusing on such matrices, we propose an algorithm that multiplies two sparse matrices exhibiting scale-free nature  on a CPU+GPU heterogeneous platform.
+
+Our experiments on a wide variety of real-world matrices from
+standard datasets show an average of 25\% improvement over the best possible algorithm on a CPU+GPU heterogeneous platform. We show that  our approach is both architecture-aware, and workload-aware.
+
+The architectural trend towards heterogeneity has
+pushed heterogeneous computing to the fore of parallel computing
+research. Heterogeneous algorithms, often carefully handcrafted,
+are designed for several important problems from
+parallel computing such as sorting, graph algorithms, matrix
+computations, and the like. A majority of these algorithms follow
+a work partitioning approach where the input is divided into
+appropriate sized parts so that individual devices can process the
+“right” parts of the input. Such a division is done by means of
+thresholds. However, identifying the right value of the threshold is
+usually non-trivial and may require extensive empirical search.
+Such an extensive empirical search may potentially offset any
+gains accrued out of heterogeneous algorithms.
+
+
+In this paper, we propose a simple and effective technique
+to identify the required thresholds in heterogeneous algorithms.
+Our technique is based on sampling and therefore can adapt
+to the algorithm used and the input instance. Our technique is
+generic in its applicability as we will demonstrate in this paper.
+
+
+We validate our technique on two problems: finding the
+connected components of a graph and multiplying two scale-free
+sparse matrices. For these two problems, we show that using our
+method, we can find the required threshold that is $\pm$ 5\% and $\pm$ 7.5\% away from the best possible threshold, respectively. Along the way, we design a novel heterogeneous algorithm for sparse
+matrix multiplication when the matrices are scale-free in nature.
+This algorithm outperforms the existing best known algorithms
+for sparse matrix multiplication by 22\% on average on a wide
+variety of matrices drawn from standard datasets.
+
