@@ -1,1 +1,11 @@
-others/
+others
+latex
+
+src/*.aux
+src/*.lof
+src/*.log
+src/*.lot
+src/*.toc
+src/output
+
+**/*.swp
