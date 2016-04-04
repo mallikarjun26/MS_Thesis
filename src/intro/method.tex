@@ -1,0 +1,24 @@
+“Represent all the data with a nonparametric model rather than trying to
+summarize it with a parametric model, because with very large data sources, the
+data holds a lot of detail... Now go out and gather some data, and see what it can
+do.”
+Alon Halevy, Peter Norvig, and Fernando Pereira,
+“The Unreasonable Effectiveness of Data” (Google, 2009)
+
+The above statement is more so true when the data at hand is diverse at many fronts. In our case, 
+the data is the face images which can have variations in terms of age, gender, expression, pose, 
+facial structure etc. Trying to come up with a parametric model which holds all these information
+leads to poorly performing systems. Also whenever there is new data, the model has to be updated
+which is not so efficient. Rather its better to go with the data driven solutions.
+
+For face fiducial detection, we employ exemplar based approach to to select the best solution 
+from among outputs of regression and mixture of trees based algorithms (which we call candidate 
+algorithms). We show that by using a very simple SIFT and HOG based descriptor, it is possible to 
+identify the most accurate fiducial outputs from a set of results produced by candidate algorithms 
+on any given test image. 
+
+For face frontalization We employ an exemplar based approach to find the transformation that relates 
+the profile view to the frontal view, and use it to generate realistic frontalizations. Our method 
+does not involve estimating 3D model of the face, which is a common approach in previous work in 
+this area. This leads to an efficient solution, since we avoid the complexity of adding one more 
+dimension to the problem. 

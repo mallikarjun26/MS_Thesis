@@ -1,0 +1,21 @@
+Face \emph{ frontalization} is the process of synthesizing a frontal view of a face, given its non-frontal view.
+Frontalization is used in intelligent photo editing tools and also aids in improving the accuracy of 
+face recognition systems.
+For example, in the case of photo editing, faces of persons in a group photo can be
+corrected to look into the camera, if they are looking elsewhere.
+Similarly, even though recent methods in face recognition claim accuracy 
+which surpasses that of humans in some cases, performance of 
+recognition systems degrade when profile view of faces are given as input. One
+way to address this issue is to synthesize frontal views of faces before recognition.
+
+We propose a simple and efficient method to address the face frontalization problem. Our method leverages the fact that 
+faces in general have a definite structure and can be represented in a low dimensional subspace. We employ an exemplar 
+based approach to find the transformation that relates the profile view to the frontal view, and use
+it to generate realistic frontalizations.
+Our method does not involve estimating {\sc 3d} model of the face, which is a common approach in previous
+work in this area. This leads to an efficient solution, since we avoid the complexity 
+of adding one more dimension to the problem. Our method also retains the structural information of the individual as compared to 
+that of a recent method~\cite{DBLP:journals/corr/HassnerHPE14}, which assumes a generic {\sc 3d} model for synthesis. 
+We show impressive qualitative and quantitative results in comparison to the state-of-the-art in
+this field.
+

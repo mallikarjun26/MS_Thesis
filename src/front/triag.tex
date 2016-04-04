@@ -1,0 +1,15 @@
+Once the frontal view of the nearest exemplar is obtained, we need to transform the input profile
+face to a frontal view. To do this, we first \emph{transfer} correspondences between the exemplar
+pairs to the input image. This is done by replacing positions of the profile exemplar landmarks with
+those of the input image.
+Using the landmarks
+obtained, we define around 110 triangles on the face, each of which can be considered as a plane in
+the face coordinate system. Since the triangles are defined based on particular set of landmarks, we
+have correspondences between planes in the input image and corresponding frontal view
+exemplar. We obtain the affine transformations between the corresponding planes and  
+then synthesize the frontal view of the input image using these transformations.
+
+ Figure~\ref{fig:method_pipeline} pictorially represents our method. 
+For a given profile view input face, $A_p$, we retrieve most similar exemplar, $I^i_p$ from the $D$
+along with its corresponding frontal view face, $I^i_f$. We then compute affine
+transformations, $H^i$, to transform planes of $A_p$ to generate its frontal view.

@@ -1,0 +1,17 @@
+\label{subsec:output_selection}
+
+Once the fiducial detection of the state-of-the-art candidate algorithms are obtained for
+an input image, we compute appearance 
+vectors for an image patch around each fiducial location. Appearance vectors are represented 
+in HOG and SIFT space. 
+% Note that the SIFT feature is invariant to scale, 
+% rotation and illumination which is important for the case of K-Nearest Neighbor approach. 
+We concatenate these features them to form the feature vector.
+
+We then compare these candidate algorithm feature vectors 
+to the exemplars chosen from the previous approach,
+and choose the candidate algorithm-exemplar image output that minimizes the sum of
+euclidean distance between common features (equation~\ref{eq:main_fourth_equation}). Note that this is a simple kNN based approach,
+where k=1. Alternatively, we also consider the idea of selecting individual fiducials
+from various candidate algorithm outputs, to form our own facial structure that minimizes
+an objective function. This is explained in the following section.

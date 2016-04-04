@@ -1,0 +1,27 @@
+\label{subsec:implementation_details}
+
+In this section, we present some implementation details of the paper along with threshold values.
+
+To compute the appearance vector around each fiducial part, we take 10x10 pixel patches and extract 
+HOG features with a cell size of 3. We also compute the SIFT features around facial fiducial 
+locations at two different scales of 5 and 8 pixels. After concatenating both the features, we obtain a 
+vector of dimension 535 for each part. This is repeated for all the fiducial parts for both
+candidate algorithms and exemplars.
+% The appearance vector generated for a part is considered to be of one class and 
+% the appearance vectors of all other parts from the training samples are considered to be of another 
+% class and the transformation matrix is learnt.
+% For the selection of exemplars, we used 20 clusters in k-means algorithm which are to be used for k-NN selection. 
+% 
+% We present results in two type of metrics which are generally used in fiducial part detector literature. 
+% Mean error for each of the part is the mean of euclidean distances of part location of algorithm 
+% output to ground truth normalized by inter-ocular distance for all the training samples. Mean 
+% error for the whole data set is the mean of all the mean errors of parts. We consider the 
+% prediction as a failure if the mean error of the testing sample exceeds 0.1. 
+For the experimentation, we used $20$ clusters in k-means algorithm to automatically choose the
+trainnig samples to be used for kNN selection. 
+%To compute
+%the transformation matrix based on~\cite{weinberger09distance}, we consider each part separately.
+
+We took the author released code for candidate algorithms~\cite{xhuCVPR12_wild, xiongCVPR13_SDM,  
+artizzzuICCV13_COFW, asthanaCVPR14_Chehra, Tzimiropoulos_2015_CVPR} along with the trained models. Experiments were conducted
+on the same test split for candidate and our algorithms for all the datasets.

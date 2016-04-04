@@ -1,0 +1,30 @@
+Distance metrics in KNN setting 
+No statistical knowledge, go euclidean
+But doesn't make sense if you have data and extract some statistics to help with metrics
+Example face recog and gender. Site
+
+Most generic way is to learn the M matrix
+We use LMNN
+Formulation
+
+Type of metric used to measure between two points in KNN algorithm plays an important role 
+in determining its performance. If no prior knowledge of the data is available, KNN algorithm
+is generally used with Euclidean distance measure. Since Euclidean metric doesn't hold any
+statistical measure of data with respect to labels, it would lead to sub-optimal solutions.
+~\cite{Chopra:2005:LSM:1068507.1068961}, ~\cite{NIPS2004_2566}, ~\cite{Shalev-Shwartz:2004:OBL:1015330.1015376}, 
+~\cite{Shental:2002:ALR:645318.649268} shows that the performance of KNN improves by 
+learning an appropriate distance metric. For example, distance metric learnt for face recognition
+task and the gender detection task would be significantly different.
+
+Even simple linear transformation can lead to better performance in KNN classification as shown by 
+~\cite{Shalev-Shwartz:2004:OBL:1015330.1015376} and ~\cite{NIPS2004_2566}. Consider Mahalanobis
+metric represented as below,
+
+Formula
+Where M  = Lt L.
+
+One can learn the parameters in Matrix M with M constrained to be a positive-semidefinite matrix to
+guarantee positive distances between any two points.
+
+In our experiments, we consider modified version Nearest Neighbour called Large Margin Nearest Neighbour(LMNN).
+This algorithm was specifically designed to work well with KNN.

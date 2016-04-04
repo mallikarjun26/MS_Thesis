@@ -1,0 +1,15 @@
+\label{subsec:algorithm_outline}
+As explained earlier, our algorithm is divided into two main sub-parts: \emph{exemplar selection}
+and \emph{output selection}.
+The task in exemplar selection 
+is to select a subset of face images with ground truth annotations from the training dataset, 
+that are representative of the \emph{variation of pose, appearance including occlusion, expression}
+\etc of the dataset in consideration. Algorithm~\ref{alg:exemplar_selection} gives an outline
+of our approach to exemplar selection. Note that while, we could use the entire training dataset
+annotations as exemplars, it suffices to have this limited set, as we will show in
+section~\ref{subsec:experimental_analysis}.
+
+This subset of annotated images then serve as our basis for differentiating between
+the various candidate algorithm outputs on any test image. The process of selecting 
+the best fitting fiducials on any test image, given the exemplars, is called
+output selection.

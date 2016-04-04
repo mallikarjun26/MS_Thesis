@@ -1,0 +1,31 @@
+% Simplest and effective
+% No knowledge of distribution of data
+% Instance based learning
+% Look at the neighbours to know what you are
+% Explain above. Figure
+% Performance depends on N and K, also metric
+% Some problems regarding increasing and decreasing k
+
+\begin{figure}
+    \centering
+    \includegraphics[width=5in, height=1.6in]{concepts/figures/knn.png}
+    \label{fig:knn_example}
+    \caption{Left hand figure shows an example for 1-NN decision rule and the right hand figure shows the example for 4-NN}
+\end{figure}
+
+KNN is one of the simplest and effective classification algorithm used in the community. 
+If one doesn't know the distribution of data at hand, it is generally preferred to go 
+with kNN as wrong assumption of distribution in other algorithms leads to bad performance.
+kNN is an instance based learning or lazy learning as it depends on the samples from a 
+small neighbourhood. All the training data is carried over till testing phase, where the 
+label of the unknown test data is classified to a label represented by the majority label
+of its k-nearest neighbours. Figure~\ref{fig:knn_example} shows the example for labeling the test sample when
+K is equal to one and four.
+
+The performance of KNN is dependent on the chosen value of K and also the distance metric
+used. The neighbourhood distance of the sample depends on the Kth nearest neighbour. 
+Different K results in different distances and different conditional probablities. If value
+of K is very small, sample ends up with a small neighbourhood and could result in poor
+performance because of data sparseness, noise, ambiguous or poorly labelled data. If we
+try to smoothen bad effects by increasing the value of K, it results in introduction of 
+outliers from other class and result in over smoothing.

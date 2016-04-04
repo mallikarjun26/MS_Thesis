@@ -1,0 +1,52 @@
+\label{sec:related_work}
+
+In this section, we categorize recent facial fiducial detection algorithms and discuss their advantages in brief.
+\subsection{Active Appearance Models (AAM):}
+The AAM framework has existed for almost two decades \cite{edwa_tayl_coot1998,Baker03} and the traditional AAM based
+methods have not been suitable for fiducial detection \emph{in the wild} \cite{Saragih_PR2009,gross2005generic}. However, some recent methods that deviate from the traditional 
+pixel-value based texture model have shown new promise \cite{antonakos2014hog,asthana_pami_2015}.   
+\subsection{Constrained Local Models (CLMs):}
+The CLM framework has existed for a decade \cite{Cristinacce2006,Saragih2011_1} and has been shown
+to be more
+capable of handling \emph{in the wild} settings. In short, CLM is a part-based approach that relies on the
+locally trained detectors to generate response maps for each fiducial point followed by a simple Gauss-Newton
+method based optimization \cite{Saragih2011_1} for facial shape estimation. A regression based strategy for CLM
+optimization has also been proposed recently \cite{akshay_CVPR_2013}.
+\subsection{Exemplar Methods:}
+Exemplar based approaches have been popular since Belhumeur \etal \textquotesingle s
+work~\cite{kumarPAMI13_faceExem}. Zhao \etal~\cite{zhaoACCV12_AAM} use gray scale pixel values and HOG features
+to select k-nearest neighbor training faces, from which they construct a target-specific AAM at
+runtime. Smith \etal~\cite{smithCVPR14_Context} and Shen \etal~\cite{shenCVPR13_retrieval} perform Hough voting
+using k-NN exemplar faces, which provides
+robustness to variations in appearance due to occlusion, illumination and expression. Finally,
+Zhou \etal~\cite{zhouICCV13_EGM} combine an exemplar-based approach with graph-matching for robust facial fiducial 
+localization. Since, we build upon outputs of candidate algorithms, we take inherent advantage
+of the shape based regularization schemes employed by individual approaches and thus either side-step
+this problem (section~\ref{subsec:output_selection}) or \emph{smoothen} candidate outputs using
+optimization (Figure~\ref{fig:with_without_structural_costs}) in our algorithms.
+
+\subsection{Cascaded Regression Based Methods:}
+Cascaded regression based methods are considered to be the current state-of-the-art for facial fiducial detection
+\cite{CaoWWS12,XiongD13,akshay_wild_2014,6909614,Tzimiropoulos_2015_CVPR}. All these methods are capable for robustly handling \emph{in the wild} settings in real-time. In general, the training strategy is to synthetically perturb each of the ground truth
+shapes and extract robust image features (SIFT or HOGs) around each of the perturbed fiducial points. The regression
+is then used to learn a mapping from these features to the shape perturbation w.r.t the ground truth shape.
+Generally, a cascaded regression based strategy is adopted to learn this mapping and has been shown to converge
+in 4-5 iterations \cite{XiongD13,akshay_wild_2014}.  
+
+ A recent work of Smith \etal ~\cite{smithECCV14_ED} addresses the problem of analyzing the quality of facial fiducial
+results using an exemplars based approach. However, several difference exist between our approaches.
+Firstly, they work on a completely different problem of \emph{aggregating} fiducials from different datasets and transferring them to a target dataset through Hough based feature \emph{detection}~\cite{shenCVPR13_retrieval},
+while the goal of the work presented in this paper is to \emph{select} the best locations for each fiducial among
+the candidate locations provided by various candidate algorithms on every image. 
+%THIS STATEMENT IS NOT CLEAR. NEED MORE CLARIFICATION.
+Secondly, they use algorithms like graph matching to ensure that the detected fiducials resemble a
+face~\cite{zhouICCV13_EGM}, while we either side-step such issues
+(section~\ref{subsec:output_selection}) or handle them using optimization
+(section~\ref{subsec:optimization}).
+ 
+
+Recently, some promising attempts have also been made to approach the problem of facial fiducial detection in the deep-learning framework ~\cite{zhangECCV14_deepfacealign}. However, most of the proposed deep-learning based models work on low resolution images ~\cite{zhangECCV14_deepfacealign,DBLP:journals/corr/ZhangLLT14}.
+This prevents us from getting accurate fiducials on actual data.
+In this paper, we present a fully-automatic
+and principled approach for selecting the best fiducial location by combining results from multiple
+candidate algorithms for every image.
