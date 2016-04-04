@@ -1,0 +1,18 @@
+Target 40 pages
+
+Intro - 4 pages
+    Motivation and objectives 1 page
+    Methodology 1 page
+    Contirbutions and novelties 1 page
+    Thesis overview 1 page
+
+Concepts - 8 pages
+    Affine transformation
+    Bayes formulation
+    Linear optimization
+    Metric learning 
+    
+Fiducial - 15 pages
+Frontalization - 10 pages
+Conclusion - 2 pages
+

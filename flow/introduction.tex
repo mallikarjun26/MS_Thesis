@@ -1,0 +1,97 @@
+Motivation and Objectives
+-------------------------
+
+General face problems
+Fundamental problems to solve those
+Problems I choose
+
+Explain in detail how fid solves each of the general problem
+- Biometrics
+    Face recognition
+        Aids in aligning
+    Expression detection
+        Structural information
+    Gender detection
+        Structural statistics
+
+Explain in detail how front solves each of the general problem
+- Animation
+    Frontalization
+    Mimicry
+    
+Computer vision as a field includes making inference out of images. There has been decades of research 
+happening in this field. We also have seen fruitful applications achieved in various domains. Be it 
+reconstructing of 3D world which helps in automatic car navigation, analysis of medical images for 
+early detection of diseases, analysis of astronimical images to study universe in general, biometric
+systems for security purposes using finger print or face images. Even though there has been decades of 
+research, problems mentioned above are not completely solved as there is demand for more precision
+and efficient solutions. Technological advancement from other ends such as camera capablilites,
+computational capacity aids in solving problems which were not feasible earlier.
+
+In this thesis, we are going to concentrate on approaches and applications on face images. We have seen
+a lot of generic problems such as face detection, face recognition, expression detection, gaze
+identification, face renactment etc currently being under research and also deployed in various 
+systems. Most of the above system depends on pre-processing steps such as representation, face fiducial 
+detection, tranformation etc which influences the effectiveness to a great extent. Specifically in this
+thesis we consider the problem of face fiducial detection and face frontalization whose approach are 
+used as pre-processing steps.
+
+Consider a basic face recognition system. To have the representation of an individual's face as a 
+model, we need to be sure the representation of face has to be aligned to get a meaningful model. 
+Face fiducial detection is used as a pre-processing step to extract the features at the corresponding
+locations while building the model. Similarly for an expression detection system, statistical 
+distribution facial landmarks with each other helps in predecting accurate expression. Even the 
+gender detection system would need facial landmarks as their initial point as fiducials are in
+general differently distributed for different gender.
+
+Other pre-processing step which we discuss in this thesis is face frontalization. Given a profile
+view face, a frontal view face is synthesized. This approach helps in improving the accuracy of 
+face recognition system as the profile view faces would result in degraded performance. It is
+also used for face renactment where video of a person can be mimicked by replacing the face with
+another.
+
+Methodology
+-----------
+
+- Quote and explanation
+    Q
+    
+    Cant handle all variations
+    Modifying the model isn't efficient
+    
+- Fiducial detection
+    No models to select the best!
+    Exemplars for the rescue.
+    
+- Frontalization
+    No estimation of 3D models
+    Just a 2D association to find the nearest exemplar
+
+
+“Represent all the data with a nonparametric model rather than trying to
+summarize it with a parametric model, because with very large data sources, the
+data holds a lot of detail... Now go out and gather some data, and see what it can
+do.”
+Alon Halevy, Peter Norvig, and Fernando Pereira,
+“The Unreasonable Effectiveness of Data” (Google, 2009)
+
+The above statement is more so true when the data at hand is diverse at many fronts. In our case, 
+the data is the face images which can have variations in terms of age, gender, expression, pose, 
+facial structure etc. Trying to come up with a parametric model which holds all these information
+leads to poorly performing systems. Also whenever there is new data, the model has to be updated
+which is not so efficient. Rather its better to go with the data driven solutions.
+
+For face fiducial detection, we employ exemplar based approach to to select the best solution 
+from among outputs of regression and mixture of trees based algorithms (which we call candidate 
+algorithms). We show that by using a very simple SIFT and HOG based descriptor, it is possible to 
+identify the most accurate fiducial outputs from a set of results produced by candidate algorithms 
+on any given test image. 
+
+For face frontalization We employ an exemplar based approach to find the transformation that relates 
+the profile view to the frontal view, and use it to generate realistic frontalizations. Our method 
+does not involve estimating 3D model of the face, which is a common approach in previous work in 
+this area. This leads to an efficient solution, since we avoid the complexity of adding one more 
+dimension to the problem. 
+
+Contributions and Novelties
+---------------------------

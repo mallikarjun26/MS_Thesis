@@ -1,0 +1,8 @@
+Fiducial
+    - kNN
+    - Metric learning
+    - Linear optimization
+    - Bayes formulation 
+
+Frontalization
+    - Affine transformation
