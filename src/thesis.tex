@@ -15,12 +15,16 @@
 \usepackage{algorithm2e}
 
 \usepackage{booktabs}
-\usepackage{subfigure}
+\usepackage{subfig}
+\usepackage{textcomp}
 \usepackage{url}
 \graphicspath{{images/}{./}}
 
 \long\def\symbolfootnote[#1]#2{\begingroup%
 \def\thefootnote{\fnsymbol{footnote}}\footnote[#1]{#2}\endgroup}
+\def\etal{\emph{et al}.}
+\def\etc{\emph{etc}.} 
+\def\vs{\emph{vs}.}
 \renewcommand{\baselinestretch}{1.2}
 \onecolumn
 %--------------------------------------------------------
@@ -67,6 +71,12 @@
 \chapter{Introduction}
 \label{ch:intro}
 \input{introduction.tex}
+
+%--------------------------------------------------------
+
+\chapter{Concepts}
+\label{ch:concepts}
+\input{concepts.tex}
 
 %--------------------------------------------------------
 

@@ -1,52 +1,35 @@
-\section{Abstract}
-Facial fiducial detection is a challenging problem for several reasons
- like varying pose, appearance, expression, partial occlusion and others.
-In the past, several approaches like mixture of trees~\cite{xhuCVPR12_wild}, regression based
-methods~\cite{artizzzuICCV13_COFW},  
-exemplar based methods~\cite{kumarPAMI13_faceExem} have been proposed to tackle this challenge.
-
-In this paper, we propose an exemplar based approach to select the best solution from among outputs of
-regression and mixture of trees based algorithms (which we call candidate algorithms). 
-We show that by using a very simple SIFT and
-HOG based descriptor, it is possible to identify the most accurate
-fiducial outputs from a set of results produced by candidate
-algorithms on any given test image. Our approach manifests as two algorithms, one 
-based on optimizing an objective function with quadratic terms and the other based
-on simple kNN. Both algorithms take as input
-fiducial locations produced by running state-of-the-art
-candidate algorithms on an input image, and output
-accurate fiducials using a set of automatically selected exemplar images with annotations.
-Our surprising result is that in this case, a simple algorithm like kNN is able to take
-advantage of the seemingly huge complementarity of these candidate algorithms,
-better than optimization based algorithms.
-
-We do extensive experiments on several datasets, and show that our approach
-outperforms state-of-the-art consistently. In some cases, we report as much
-as a $10\%$ improvement in accuracy. We also extensively analyze each
-component of our approach, to illustrate its efficacy.
-
-An implementation and extended technical report of our approach is available www.sites.google.com/site/wacv2016facefiducialexemplars.
+\section{Introduction}
+\input{fid/intro.tex}
 
 \section{Related Work}
+\input{fid/related.tex}
 
-\section{Face Fiducial Detection}
+\section{Algorithm}
+\input{fid/algo.tex}
 
 \subsection{Formulation}
+\input{fid/form.tex}
 
 \subsection{Algorithm Outline}
+\input{fid/algo_outline.tex}
 
 \subsection{Exemplar Selection}
+\input{fid/exem_sel.tex}
 
 \subsection{Output selection by kNN}
+\input{fid/out_knn.tex}
 
 \subsection{Output selection by Optimization}
+\input{fid/out_opt.tex}
 
 \subsection{Implementation Details}
+\input{fid/impl.tex}
 
 \section{Results}
+\input{fid/res.tex}
 
-\subsection{Qualitative Results}
+\subsection{Quatitative Results}
+\input{fid/quant.tex}
 
 \subsection{Experimental Analysis}
-
-\section{References}
+\input{fid/exp.tex}
