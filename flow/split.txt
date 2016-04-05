@@ -7,10 +7,11 @@ Intro - 4 pages
     Thesis overview 1 page
 
 Concepts - 8 pages
-    Affine transformation
-    Bayes formulation
-    Linear optimization
-    Metric learning 
+    knn - 1 page
+    Affine transformation 1
+    Bayes formulation 1
+    Linear optimization 1.5
+    Metric learning 1.5
     
 Fiducial - 15 pages
 Frontalization - 10 pages

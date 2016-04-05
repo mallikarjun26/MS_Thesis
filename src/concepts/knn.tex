@@ -6,6 +6,10 @@
 % Performance depends on N and K, also metric
 % Some problems regarding increasing and decreasing k
 
+% Classifcation setting.
+% Metric gives the measure of dissimilarity
+
+
 \begin{figure}
     \centering
     \includegraphics[width=5in, height=1.6in]{concepts/figures/knn.png}
@@ -29,3 +33,8 @@ of K is very small, sample ends up with a small neighbourhood and could result i
 performance because of data sparseness, noise, ambiguous or poorly labelled data. If we
 try to smoothen bad effects by increasing the value of K, it results in introduction of 
 outliers from other class and result in over smoothing.
+
+In our experiments, we use KNN in classification setting. Assuming face fiducial detection
+is a function given an image, we want to select one best performing function from among the 
+functions in the appearance space where we have the training samples. The distance metric 
+would give the degree of dissimilarity between the points.

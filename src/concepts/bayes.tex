@@ -1,0 +1,54 @@
+% reason coherently in face of uncertainity
+% mathematically handling uncertainity proposed by Bayes further developed by statisticians
+% used in fields such as multisensory integration, motor learning, visual illusions, neural
+% computations and also as basis of machine learning
+% 
+% Bayes rule states that
+% 
+% 
+% easily derived from probability theory.
+% x data point, t is model parameter.
+% P(t) - prob of model parameter. prior also.
+% prior before observing any info about x
+
+Bayesian methods helps in providing coherent reasons in the face of uncertainity. Its based 
+on mathematically handling uncertainity proposed by Bayes and Laplace in $18^th$ century and 
+developed further by statisticians and philosophers in the $20^th$ century. Bayesian methods
+have emerged as popular models in the field of multisensory integration, motor learning, 
+, neural computation and as the base of machine learning. 
+
+Bayes rule states that,
+\begin{equation}
+P(\theta | x) = \frac{P(x|\theta) P(\theta)}{P(x)}
+\end{equation}
+
+It can be derived from basic probability theory. Here $x$ can be considered as the data point 
+and the $\theta$ as the model parameters. $P(\theta)$ is the probability of $\theta$ and is 
+refered as the prior. Prior is obtained before observing any information on $x$. $P(x|\theta)$ is
+considered as \textit{likelihood} and is the probablity of $x$ conditioned on $\theta$. $P(\theta|x)$
+is considered as \textit{posterior} probability of $\theta$ after observing $x$. $P(x)$ is the
+normalizing factor.
+
+For a dataset of $N$ points, $D = {x_1, x_2, . . . , x_N}$, and model $m$ with model parameters 
+$\theta$:
+\begin{equation}
+    P(m|D) = \frac{P(D|m) P(m)}{P(D)}
+\end{equation}
+
+We compute the above quantity for many different models $m$ and select the one with highest 
+posterior probability as the best model for our data. 
+\begin{equation}
+    P(D|m) = \sum_i{P(D|\theta_i, m)P(\theta_i|m)}
+\end{equation}
+and is called the \textit{marginal likelihood}.
+
+To predict the probability of new data points, $x^*$, which have not been observed yet,
+\begin{equation}
+    P(x^*|D, m) = \sum_i{ P(x^∗|\theta_i)P(\theta_i|D, m)}
+\end{equation}
+where
+\begin{equation}
+    P(\theta|D,m) = \frac{P(D|\theta, m)P(\theta|m)}{P(D|m)}
+\end{equation}
+is the posterior probability of model parameters $\theta$ conditioned on the data $D$ and is
+based on Bayes rule.

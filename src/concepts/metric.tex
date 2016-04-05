@@ -1,11 +1,21 @@
-Distance metrics in KNN setting 
-No statistical knowledge, go euclidean
-But doesn't make sense if you have data and extract some statistics to help with metrics
-Example face recog and gender. Site
-
-Most generic way is to learn the M matrix
-We use LMNN
-Formulation
+% Distance metrics in KNN setting 
+% No statistical knowledge, go euclidean
+% But doesn't make sense if you have data and extract some statistics to help with metrics
+% Example face recog and gender. Site
+%
+%
+% x and y are two points
+% define euclidean distance
+% Linearly transformed distance
+% Mahalanobis distance
+% we consider lmnn 
+% formulation 
+% 
+% how it helps in our case
+% while comparing eyes and ears helps
+% Most generic way is to learn the M matrix
+% We use LMNN
+% Formulation
 
 Type of metric used to measure between two points in KNN algorithm plays an important role 
 in determining its performance. If no prior knowledge of the data is available, KNN algorithm
@@ -16,15 +26,51 @@ statistical measure of data with respect to labels, it would lead to sub-optimal
 learning an appropriate distance metric. For example, distance metric learnt for face recognition
 task and the gender detection task would be significantly different.
 
-Even simple linear transformation can lead to better performance in KNN classification as shown by 
-~\cite{Shalev-Shwartz:2004:OBL:1015330.1015376} and ~\cite{NIPS2004_2566}. Consider Mahalanobis
-metric represented as below,
+Consider $x$ and $y$ as two points in a space. The Euclidean distance, $d$ between these two points is
+defined as
 
-Formula
-Where M  = Lt L.
+\begin{equation}
+    d = \sqrt{(x_1-y_1)^2 + (x_2-y_2)^2 + . . . + (x_n-y_n)^2} 
+\end{equation}
 
-One can learn the parameters in Matrix M with M constrained to be a positive-semidefinite matrix to
-guarantee positive distances between any two points.
+Even simple linear transformation learnt in supervised manner can lead to better performance in KNN 
+classification as shown by ~\cite{Shalev-Shwartz:2004:OBL:1015330.1015376} and ~\cite{NIPS2004_2566}.
+Consider a linear transformation matrix, $L$ which satisfies pseudo-metric properties such as triangular 
+inequality, non-negativity, symmetry and uniqueness. The distance measured in the transformed space 
+can be represented by,
 
-In our experiments, we consider modified version Nearest Neighbour called Large Margin Nearest Neighbour(LMNN).
-This algorithm was specifically designed to work well with KNN.
+\begin{equation}
+    d_L = || L(x - y) ||^2
+\end{equation}
+
+The generalization of Euclidean metric is the Mahalanobis metric. The Mahalanobis distance between two
+vectors is defined as,
+
+\begin{equation}
+    d_M = \sqrt{ (x-y)^T M (x-y) }
+\end{equation}
+
+Where $M$ has to be positive semi-definite matrix. Euclidean metric is a special case with $M = I$.
+
+In our approaches we use distance metric to define degree of dissimilarity and also as probablity. 
+The vector under consideration for our approaches are to deal with the appearance of key feature on
+the face or structural representation of the key features on the face. Clearly there is some
+statistical information embedded across various points derieved from these features. For example,
+we could see significant correlation within the points representing an eye corner or a nose tip.
+Also correlation is different when comparing between the eye corner and nose tip points. We
+would like to use these statistical information residing in the labelled data to derive a 
+suitable distance metric to improve the accuracy of our KNN based algorithm.
+
+More specifically we use \textit{large margin nearest neighbour} (LMNN) classification algorithm
+to learn a Mahalanobis metric specifically designed for KNN classification. LMNN works on the 
+intuitive idea that the test sample would be classified correctly if it lies near to samples of
+same label. LMNN learns a linear transformation by minimizing a loss function that consists of 
+two terms, where first term ensures the samples matching the labels are pulled together and 
+second term pushes the samples with non-matching labels with large margin.
+
+
+% One can learn the parameters in Matrix M with M constrained to be a positive-semidefinite matrix to
+% guarantee positive distances between any two points.
+% 
+% In our experiments, we consider modified version Nearest Neighbour called Large Margin Nearest Neighbour(LMNN).
+% This algorithm was specifically designed to work well with KNN.
