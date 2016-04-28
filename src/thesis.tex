@@ -12,12 +12,17 @@
 \usepackage{latexsym}
 \usepackage{graphicx}
 \usepackage{multirow}
-\usepackage{algorithm2e}
+%\usepackage{algorithm2e}
+
+\usepackage{cite}
+\usepackage{algorithmic}
+\usepackage{algorithm}
 
 \usepackage{booktabs}
 \usepackage{subfig}
 \usepackage{textcomp}
 \usepackage{url}
+%\usepackage{epigraph}
 \graphicspath{{images/}{./}}
 
 \long\def\symbolfootnote[#1]#2{\begingroup%
@@ -27,6 +32,15 @@
 \def\vs{\emph{vs}.}
 \renewcommand{\baselinestretch}{1.2}
 \onecolumn
+\makeatletter
+\renewcommand{\@chapapp}{}% Not necessary...
+\newenvironment{chapquote}[2][2em]
+  {\setlength{\@tempdima}{#1}%
+   \def\chapquote@author{#2}%
+   \parshape 1 \@tempdima \dimexpr\textwidth-2\@tempdima\relax%
+   \itshape}
+  {\par\normalfont\hfill--\ \chapquote@author\hspace*{\@tempdima}\par\bigskip}
+\makeatother
 %--------------------------------------------------------
 
 \begin{document}
@@ -74,38 +88,37 @@
 
 %--------------------------------------------------------
 
-\chapter{Concepts}
-\label{ch:concepts}
-\input{concepts.tex}
-
-%--------------------------------------------------------
-
-\chapter{Fiducial detection}
-\label{ch:fid_ch}
-\input{fid.tex}
-
-%--------------------------------------------------------
-
-\chapter{Frontalization}
-\label{ch:front_ch}
-\input{front.tex}
-
-%--------------------------------------------------------
-
-\chapter{Conclusions and Future Work}
-\label{ch:conc}
-\input{conclusion.tex}
-
-%--------------------------------------------------------
-% Recommended 'Related Publication'
-\chapter*{Related Publications}
-\label{ch:relatedPubs}
-\input{relatedPapers.tex}
+% \chapter{Concepts}
+% \label{ch:concepts}
+% \input{concepts.tex}
+% 
+% %--------------------------------------------------------
+% 
+% \chapter{Fiducial detection}
+% \label{ch:fid_ch}
+% \input{fid.tex}
+% 
+% %--------------------------------------------------------
+% 
+% \chapter{Frontalization}
+% \label{ch:front_ch}
+% \input{front.tex}
+% 
+% %--------------------------------------------------------
+% 
+% \chapter{Conclusions and Future Work}
+% \label{ch:conc}
+% \input{conclusion.tex}
+% 
+% %--------------------------------------------------------
+% % Recommended 'Related Publication'
+% \chapter*{Related Publications}
+% \label{ch:relatedPubs}
+% \input{relatedPapers.tex}
 
 %--------------------------------------------------------
 
 \bibliographystyle{latex8}
-%\bibliography{References,Introduction/References} % To include one or more reference.bib files
-\bibliography{sampleThesis} 
+\bibliography{sampleBib} 
 
 \end{document}

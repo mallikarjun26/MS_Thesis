@@ -1,0 +1,71 @@
+% fid
+% Our approach attempts the problem of fiducial detec-
+% tion as a classification problem of differentiating be-
+% tween the best vs the rest among fiducial detection
+% outputs of state-of-the-art algorithms. To our knowl-
+% edge, this is the first time such an approach has been
+% attempted.
+% • Since we only focus on selecting from a variety of so-
+% lution candidates, this allows our pre-processing rou-
+% tine to generate outputs corresponding to a variety
+% of face detector initialization, thus rendering our al-
+% gorithm insensitive to initialization unlike other ap-
+% proaches.
+% • Combining approaches better geared for sub-pixel ac-
+% curacy and algorithms designed for robustness leads
+% to our approach outperforming state-of-the-art in both
+% accuracy and robustness.
+% 
+% front
+
+
+In this thesis, we propose exemplar based approaches for two fundamental problems
+related to face images. In both the cases, we provide extensive experimental 
+analysis to show that the proposed approaches perform superior to the 
+state-of-the-art methods on popular datasets. Face fiducial detection approach 
+manifests as two algorithms, one based on optimizing an objective function with 
+quadratic terms and the other based on simple kNN. Proposed face frontalization
+approach can be used either as a pre-processing step in face recognition, gender
+identification algorithms or also in rendering face video for face reenactment.
+
+Proposed face fiducial is \textit{initialization-insensitive, pose/occlusion and
+expression-robust} approach with the following characteristics,
+\begin{itemize}
+\item{Our approach attempts the problem of fiducial detection 
+as a classification problem of differentiating between 
+the best vs the rest among fiducial detection outputs of 
+state-of-the-art algorithms. To our knowledge, this is the 
+first time such an approach has been attempted.}
+\item{Since we only focus on selecting from a variety of solution 
+candidates, this allows our pre-processing routine 
+to generate outputs corresponding to a variety of face 
+detector initialization, thus rendering our algorithm 
+insensitive to initialization unlike other approaches.}
+\item{Combining approaches better geared for sub-pixel accuracy 
+and algorithms designed for robustness leads to our 
+approach outperforming state-of-the-art in both accuracy 
+and robustness.}
+\end{itemize}
+
+We compare our approach with five of \textit{state-of-the-art} methods on
+three popular datasets such as LFPW, COFW and AFLW. In some cases, we
+report as much as $10$ improvement in the accuracy.
+\newline
+For face frontalization, we employ an exemplar based approach to find the 
+transformation that relates the profile view to the frontal view, and use it 
+to generate realistic frontalizations. In specific,
+\begin{itemize}
+\item{Our method does not involve estimating 3D model of the face,
+which is a common approach in previous work in this area. This
+leads to an efficient solution, since we avoid the complexity of
+adding one more dimension to the problem}
+\item{Our method also retains the structural information of the individual 
+as compared to that of a recent method, which assumes a generic 3D model
+for synthesis}
+\end{itemize}
+
+We compare our approach with a recent \textit{state-of-the-art} method. We
+provide qualitative comparision on various faces extracted from the videos
+available online. We also provide quantitative result on a face recognition 
+dataset by frontalizing all the faces before the recognition task and show 
+that our method performs significantly better and efficient.  

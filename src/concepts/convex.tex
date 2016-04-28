@@ -1,0 +1,27 @@
+% Linear programming
+% Quadratic programming
+% Quadratically constrained quadratic programming
+% Integer Programming
+% Integer relaxation
+
+Optimization in mathematical sense is to select a particular sample out of all 
+possible samples which yields best solution in some sense. Based on the sample
+spaces and the type of function which defines the outcome, we can categorize the
+optimization problem in various types. We describe few types of optimization and 
+its solutions which are relevant to this thesis in the following section.
+
+\bf{Linear optimization} is special case of mathematical optimization in which the
+solution space is defined by the linear equality and inequality constraints with
+a linear objective function. The solution space is a convex polytope. Linear
+optimization problem can be canonically represented as
+
+\begin{equation}
+O(x) = \arg\max_x(c_Tx)
+\end{equation}
+subjected to $Ax < b$ and $x>=0$. Where $x$ is the variable vector, $A$ is a
+matrix and $b$ is vector which defines the solution space. There are various
+algorithms like \textit{Simplex algorithm, Criss-Cross algorithm, Interior 
+point method}, which can solve for global optimum.
+
+\bf{Quadratic programming} is another special case of mathematical optimization
+with a quadratic objective function subjected to linear constraints.
