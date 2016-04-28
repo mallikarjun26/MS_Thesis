@@ -1,6 +1,6 @@
-~\citation{Chopra:2005:LSM:1068507.1068961} Computer vision as a field includes making inference out of images. There has been decades of research 
-happening in this field. We also have seen fruitful applications achieved in various domains. Be it 
-reconstructing of 3D world which helps in automatic car navigation, analysis of medical images for 
+Computer vision as a field includes making inference out of images and videos. There has been decades of research 
+happening in this field. We have seen fruitful applications achieved in various domains. Be it 
+reconstruction of 3D world which helps in automatic car navigation, analysis of medical images for 
 early detection of diseases, analysis of astronimical images to study universe in general, biometric
 systems for security purposes using finger print or face images. Even though there has been decades of 
 research, problems mentioned above are not completely solved as there is demand for more precision
@@ -9,19 +9,38 @@ computational capacity aids in solving problems which were not feasible earlier.
 
 In this thesis, we are going to concentrate on approaches and applications on face images. We have seen
 a lot of generic problems such as face detection, face recognition, expression detection, gaze
-identification, face renactment etc currently being under research and also deployed in various 
+identification, face renactment \etc  currently being under research and also deployed in various 
 systems. Most of the above system depends on pre-processing steps such as representation, face fiducial 
-detection, tranformation etc which influences the effectiveness to a great extent. Specifically in this
+detection, tranformation \etc which influences the effectiveness to a great extent. Specifically in this
 thesis we consider the problem of face fiducial detection and face frontalization whose approach are 
 used as pre-processing steps.
 
-Consider a basic face recognition system. To have the representation of an individual's face as a 
-model, we need to be sure the representation of face has to be aligned to get a meaningful model. 
-Face fiducial detection is used as a pre-processing step to extract the features at the corresponding
-locations while building the model. Similarly for an expression detection system, statistical 
-distribution facial landmarks with each other helps in predecting accurate expression. Even the 
-gender detection system would need facial landmarks as their initial point as fiducials are in
-general differently distributed for different gender.
+% Face recognition pipeline
+% Problem
+% Solution
+Most challenging aspect of face recognition or verification system is to handle the variation in 
+pose. Assume if there is method to perfectly allign all the faces to one space such that the eyes,
+ears, nose, mouth \etc of all the faces fall on the same location, recognition and verification
+can be done with a simple KNN approach. Schroff \etal ~\cite{conf/cvpr/SchroffKP15} relies on a purely data driven 
+approach to attain invariance to pose. This method is suitable when there is large data. 
+Zhenyao \etal \cite{DBLP:journals/corr/ZhuLWT14} employ a deep network to \textit{warp} faces into a canonical 
+frontal view and then learn CNN that classifies each face. Sun \etal~\cite{NIPS2014_5416} relies on 
+extracting features from different face patches to counter pose variation. Facial fiducials help in
+aligned feature representation as we could extract feature corresponding to various key points on 
+the face independent of overall pose and hence achieve invariability to pose. 
+
+Face expression detections such as Chew \etal \cite{conf/fgr/ChewLLSCS11}, Valstar \etal \cite{Valstar:2006:FAF:1153172.1153856} 
+use face fiducial detection as their starting point of the system. 
+
+Similarly for an expression 
+detection system, statistical distribution facial landmarks with each other helps in predecting 
+accurate expression. Even the gender detection system would need facial landmarks as their initial 
+point as fiducials are in general differently distributed for different gender.
+
+% Consider a basic face recognition system. To have the representation of an individual's face as a 
+% model, we need to be sure the representation of face has to be aligned to get a meaningful model. 
+% Face fiducial detection is used as a pre-processing step to extract the features at the corresponding
+% locations while building the model. 
 
 Other pre-processing step which we discuss in this thesis is face frontalization. Given a profile
 view face, a frontal view face is synthesized. This approach helps in improving the accuracy of 

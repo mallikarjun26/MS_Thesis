@@ -1,3 +1,307 @@
-\begin{thebibliography}{}\setlength{\itemsep}{-1ex}\small
+\begin{thebibliography}{10}\setlength{\itemsep}{-1ex}\small
+
+\bibitem{antonakos2014hog}
+E.~Antonakos, J.~A. i~medina, G.~Tzimiropoulos, and S.~Zafeiriou.
+\newblock Hog active appearance models.
+\newblock In {\em Proceedings of IEEE International Conference on Image
+  Processing (ICIP'14)}, pages 224--228, Paris, France, October 2014.
+\newblock (Top 10% papers award).
+
+\bibitem{akshay_CVPR_2013}
+A.~Asthana, S.~Zafeiriou, S.~Cheng, and M.~Pantic.
+\newblock Robust discriminative response map fitting with constrained local
+  models.
+\newblock In {\em 2013 IEEE Conference on Computer Vision and Pattern
+  Recognition (CVPR 2013)}, Portland, Oregon, USA, June 2013.
+
+\bibitem{asthanaCVPR14_Chehra}
+A.~Asthana, S.~Zafeiriou, S.~Cheng, and M.~Pantic.
+\newblock Incremental face alignment in the wild.
+\newblock In {\em CVPR}, 2014.
+
+\bibitem{asthana_pami_2015}
+A.~Asthana, S.~Zafeiriou, G.~Tzimiropoulos, S.~Cheng, and M.~Pantic.
+\newblock From pixels to response maps: Discriminative image filtering for face
+  alignment in the wild.
+\newblock {\em IEEE Transactions on Pattern Analysis and Machine Intelligence
+  (T-PAMI). In Press.}, 2015.
+
+\bibitem{Baker03}
+S.~Baker, R.~Gross, and I.~Matthews.
+\newblock {Lucas-Kanade 20 years on: A unifying framework: Part 3}.
+\newblock Technical report, RI, CMU, USA, 2003.
+
+\bibitem{kumarPAMI13_faceExem}
+P.~Belhumeur, D.~Jacobs, D.~Kriegman, and N.~Kumar.
+\newblock Localizing parts of faces using a consensus of exemplars.
+\newblock {\em PAMI}, 35(12):2930--2940, December 2013.
+
+\bibitem{Belhumeur:1997:EVF:261506.261512}
+P.~N. Belhumeur, J.~a.~P. Hespanha, and D.~J. Kriegman.
+\newblock Eigenfaces vs. fisherfaces: Recognition using class specific linear
+  projection.
+\newblock {\em PAMI}, 1997.
+
+\bibitem{fiducials_cvpr2011}
+P.~N. Belhumeur, D.~W. Jacobs, D.~J. Kriegman, and N.~Kumar.
+\newblock Localizing parts of faces using a consensus of exemplars.
+\newblock In {\em CVPR}, 2011.
+
+\bibitem{artizzzuICCV13_COFW}
+X.~P. Burgos-Artizzu, P.~Perona, and P.~Doll\'ar.
+\newblock Robust face landmark estimation under occlusion.
+\newblock In {\em ICCV}, 2013.
+
+\bibitem{CaoWWS12}
+X.~Cao, Y.~Wei, F.~Wen, and J.~Sun.
+\newblock Face alignment by explicit shape regression.
+\newblock In {\em CVPR}, 2012.
+
+\bibitem{DBLP:journals/corr/ChariLLS14}
+V.~Chari, S.~Lacoste{-}Julien, I.~Laptev, and J.~Sivic.
+\newblock On pairwise cost for multi-object network flow tracking.
+\newblock {\em CoRR}, abs/1408.3304, 2014.
+
+\bibitem{conf/fgr/ChewLLSCS11}
+S.~W. Chew, P.~Lucey, S.~Lucey, J.~M. Saragih, J.~F. Cohn, and S.~Sridharan.
+\newblock Person-independent facial expression detection using constrained
+  local models.
+\newblock In {\em FG}, 2011.
+
+\bibitem{Chopra:2005:LSM:1068507.1068961}
+S.~Chopra, R.~Hadsell, and Y.~LeCun.
+\newblock Learning a similarity metric discriminatively, with application to
+  face verification.
+\newblock In {\em Proceedings of the 2005 IEEE Computer Society Conference on
+  Computer Vision and Pattern Recognition (CVPR'05) - Volume 1 - Volume 01},
+  2005.
+
+\bibitem{Cristinacce2006}
+D.~Cristinacce and T.~Cootes.
+\newblock Feature detection and tracking with constrained local models.
+\newblock In {\em BMVC}, 2006.
+
+\bibitem{Dalal:2005:HOG:1068507.1069007}
+N.~Dalal and B.~Triggs.
+\newblock Histograms of oriented gradients for human detection.
+\newblock In {\em CVPR}, 2005.
+
+\bibitem{edwa_tayl_coot1998}
+G.~Edwards, C.~Taylor, and T.~Cootes.
+\newblock {Interpreting Face Images Using Active Appearance Models}.
+\newblock In {\em IEEE FG}, 1998.
+
+\bibitem{NIPS2004_2566}
+J.~Goldberger, G.~E. Hinton, S.~T. Roweis, and R.~R. Salakhutdinov.
+\newblock Neighbourhood components analysis.
+\newblock In {\em Advances in Neural Information Processing Systems 17}. 2005.
+
+\bibitem{gross2005generic}
+R.~Gross, I.~Matthews, and S.~Baker.
+\newblock Generic vs. person specific active appearance models.
+\newblock {\em IMAVIS}, 23(12):1080--1093, 2005.
+
+\bibitem{DBLP:journals/corr/HassnerHPE14}
+T.~Hassner, S.~Harel, E.~Paz, and R.~Enbar.
+\newblock Effective face frontalization in unconstrained images.
+\newblock {\em CoRR}, 2014.
+
+\bibitem{HuLT14}
+J.~Hu, J.~Lu, and Y.~Tan.
+\newblock Discriminative deep metric learning for face verification in the
+  wild.
+\newblock In {\em CVPR}, 2014.
+
+\bibitem{HuangJL07}
+G.~B. Huang, V.~Jain, and E.~G. Learned-Miller.
+\newblock Unsupervised joint alignment of complex images.
+\newblock In {\em ICCV}, 2007.
+
+\bibitem{kazemi2014one}
+V.~Kazemi and J.~Sullivan.
+\newblock One millisecond face alignment with an ensemble of regression trees.
+\newblock In {\em CVPR}, 2014.
+
+\bibitem{koetsingerBFIAT11_AFLW}
+M.~Koetsinger, P.~Wohlhart, P.~Roth, and H.~Bischof.
+\newblock Annotated facial landmarks in the wild: A large-scale, real-world
+  database for facial landmark localization.
+\newblock In {\em In First IEEE International Workshop on Benchmarking Facial
+  Image Analysis Technologies}, 2011.
+
+\bibitem{surpassing_human}
+C.~Lu and X.~Tang.
+\newblock Surpassing human-level face verification performance on {LFW} with
+  gaussianface.
+\newblock In {\em {AAAI} Conference on Artificial Intelligenc}, 2015.
+
+\bibitem{malisiewicz-iccv11}
+T.~Malisiewicz, A.~Gupta, and A.~A. Efros.
+\newblock Ensemble of exemplar-svms for object detection and beyond.
+\newblock In {\em ICCV}, 2011.
+
+\bibitem{milborrowCVPR08_ASM}
+S.~Milborrow and F.~Nichols.
+\newblock Locating facial features with an extended active shape model.
+\newblock In {\em CVPR}, 2008.
+
+\bibitem{Oh:2001:IMP:383259.383310}
+B.~M. Oh, M.~Chen, J.~Dorsey, and F.~Durand.
+\newblock Image-based modeling and photo editing.
+\newblock In {\em Conference on Computer Graphics and Interactive Techniques},
+  2001.
+
+\bibitem{6909614}
+S.~Ren, X.~Cao, Y.~Wei, and J.~Sun.
+\newblock Face alignment at 3000 fps via regressing local binary features.
+\newblock In {\em Computer Vision and Pattern Recognition (CVPR), 2014 IEEE
+  Conference on}, pages 1685--1692, June 2014.
+
+\bibitem{Saragih_PR2009}
+J.~Saragih and R.~Goecke.
+\newblock {Learning AAM fitting through simulation}.
+\newblock {\em Pattern Recognition}, 42(11):2628--2636, Nov. 2009.
+
+\bibitem{Saragih2011_1}
+J.~Saragih, S.~Lucey, and J.~Cohn.
+\newblock Deformable model fitting by regularized landmark mean-shift.
+\newblock {\em IJCV}, 91(2):200--215, Jan. 2011.
+
+\bibitem{conf/fgr/SaragihLC11a}
+J.~M. Saragih, S.~Lucey, and J.~F. Cohn.
+\newblock Real-time avatar animation from a single image.
+\newblock In {\em FG}, 2011.
+
+\bibitem{conf/cvpr/SchroffKP15}
+F.~Schroff, D.~Kalenichenko, and J.~Philbin.
+\newblock Facenet: A unified embedding for face recognition and clustering.
+\newblock In {\em CVPR}, 2015.
+
+\bibitem{Shalev-Shwartz:2004:OBL:1015330.1015376}
+S.~Shalev-Shwartz, Y.~Singer, and A.~Y. Ng.
+\newblock Online and batch learning of pseudo-metrics.
+\newblock ICML '04, 2004.
+
+\bibitem{shenCVPR13_retrieval}
+X.~Shen, Z.~Lin, J.~Brandt, and Y.~Wu.
+\newblock Detecting and aligning faces by image retrieval.
+\newblock In {\em CVPR}, 2013.
+
+\bibitem{Shental:2002:ALR:645318.649268}
+N.~Shental, T.~Hertz, D.~Weinshall, and M.~Pavel.
+\newblock Adjustment learning and relevant component analysis.
+\newblock ECCV '02, 2002.
+
+\bibitem{simonyan13fisher}
+K.~Simonyan, O.~M. Parkhi, A.~Vedaldi, and A.~Zisserman.
+\newblock Fisher vector faces in the wild.
+\newblock In {\em BMVC}, 2013.
+
+\bibitem{smithCVPR14_Context}
+B.~Smith, J.~Brandt, Z.~Lin, and L.~Zhang.
+\newblock Nonparametric context modeling of local appearance for pose- and
+  expression-robust facial landmark localization.
+\newblock In {\em CVPR}, 2014.
+
+\bibitem{smithECCV14_ED}
+B.~Smith and L.~Zhang.
+\newblock Collaborative facial landmark localization for transferring
+  annotations across datasets.
+\newblock In {\em ECCV}, 2014.
+
+\bibitem{NIPS2014_5416}
+Y.~Sun, Y.~Chen, X.~Wang, and X.~Tang.
+\newblock Deep learning face representation by joint
+  identification-verification.
+\newblock 2014.
+
+\bibitem{SunWT14}
+Y.~Sun, X.~Wang, and X.~Tang.
+\newblock Deep learning face representation by joint
+  identification-verification.
+\newblock {\em CoRR}, 2014.
+
+\bibitem{Taigman_2014_CVPR}
+Y.~Taigman, M.~Yang, M.~Ranzato, and L.~Wolf.
+\newblock Deepface: Closing the gap to human-level performance in face
+  verification.
+\newblock 2014.
+
+\bibitem{Tzimiropoulos_2015_CVPR}
+G.~Tzimiropoulos.
+\newblock Project-out cascaded regression with an application to face
+  alignment.
+\newblock In {\em CVPR}, 2015.
+
+\bibitem{Valstar:2006:FAF:1153172.1153856}
+M.~Valstar and M.~Pantic.
+\newblock Fully automatic facial action unit detection and temporal analysis.
+\newblock In {\em Proceedings of the 2006 Conference on Computer Vision and
+  Pattern Recognition Workshop}, 2006.
+
+\bibitem{weinberger09distance}
+K.~Weinberger and L.~Saul.
+\newblock {Distance metric learning for large margin nearest neighbor
+  classification}.
+\newblock {\em The Journal of Machine Learning Research}, 10:207--244, 2009.
+
+\bibitem{B-WeiBoy08}
+D.~Weinland and E.~Boyer.
+\newblock Action recognition using exemplar-based embedding.
+\newblock In {\em CVPR}, 2008.
+
+\bibitem{Wolf}
+L.~Wolf, T.~Hassner, and Y.~Taigman.
+\newblock Similarity scores based on background samples.
+\newblock In {\em ACCV}, 2010.
+
+\bibitem{Wright:2009:RFR:1495801.1496037}
+J.~Wright, A.~Y. Yang, A.~Ganesh, S.~S. Sastry, and Y.~Ma.
+\newblock Robust face recognition via sparse representation.
+\newblock {\em PAMI}, 2009.
+
+\bibitem{xiongCVPR13_SDM}
+X.~Xiong and F.~D. la~Torre.
+\newblock Supervised descent method and its applications to face alignment.
+\newblock In {\em CVPR}, 2013.
+
+\bibitem{yuECCV14_CoR}
+X.~Yu, Z.~Lin, J.~Brandt, and D.~Metaxas.
+\newblock Consensus of regression for occlusion-robust facial feature
+  localization.
+\newblock In {\em ECCV}, 2014.
+
+\bibitem{zhangECCV14_deepfacealign}
+Z.~Zhang, P.~Luo, C.~C. Loy, and X.~Tang.
+\newblock Facial landmark detection by deep multi-task learning.
+\newblock In {\em ECCV}, 2014.
+
+\bibitem{DBLP:journals/corr/ZhangLLT14}
+Z.~Zhang, P.~Luo, C.~C. Loy, and X.~Tang.
+\newblock Learning and transferring multi-task deep representation for face
+  alignment.
+\newblock {\em CoRR}, 2014.
+
+\bibitem{zhaoACCV12_AAM}
+X.~Zhao, S.~Shan, X.~Chai, and X.~Chen.
+\newblock Locality-constrained active appearance model.
+\newblock In {\em ACCV}, 2012.
+
+\bibitem{zhouICCV13_EGM}
+F.~Zhou, J.~Brandt, and Z.~Lin.
+\newblock Exemplar-based graph matching for robust facial landmark
+  localization.
+\newblock In {\em ICCV}, 2013.
+
+\bibitem{xhuCVPR12_wild}
+X.~Zhu and D.~Ramanan.
+\newblock Face detection, pose estimation and landmark localization in the
+  wild.
+\newblock In {\em CVPR}, 2012.
+
+\bibitem{DBLP:journals/corr/ZhuLWT14}
+Z.~Zhu, P.~Luo, X.~Wang, and X.~Tang.
+\newblock Recover canonical-view faces in the wild with deep neural networks.
+\newblock {\em CoRR}, 2014.
 
 \end{thebibliography}

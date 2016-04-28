@@ -19,7 +19,7 @@ and $x_d^b$ are $1$. And, $p_{cd}^{ab}$ define the structural cost when $y_{cd}^
 Thus $y^{ab}_{cd}$ is the binary variable that represents \emph{joint selection} of fiducials
 corresponding to unary variables $x^a_c$ and $x^b_d$.
 
-\subsection{Appearance Costs:} We would want the fiducial prediction for each part to look similar to the corresponding fiducial  
+\textbf{Appearance Costs:} We would want the fiducial prediction for each part to look similar to the corresponding fiducial  
 of \emph{one} of the exemplars. To do this, we compare the appearance feature vectors (using SIFT
 and HOG) between the fiducial $x_i^j$ and that of the corresponding fiducials in the exemplar
 database.
@@ -35,7 +35,7 @@ let $u^j_i = \Vert f(x^j_i) - f(\mathcal{E}^j_{m(j,i)}) \Vert^2$.
 % appDist_2^j, \ldots , appDist_N^j)$. Where $appDist_n^j$ is the Euclidean distance between the
 % appearence feature vectors at fiducal prediction by method $i$ for part $j$ and at ground truth
 % location of exemplar $n$ at part $j$.
-\subsection{Structural Costs:} We would also want to preserve the facial structure while selecting fiducials. This is most
+\textbf{Structural Costs:} We would also want to preserve the facial structure while selecting fiducials. This is most
 naturally enforced in the binary variable cost $p^{ab}_{cd}$. 
 The importance of this cost is depicted in Figure~\ref{fig:with_without_structural_costs}.
 We enforce structural consistency by ensuring that if
@@ -83,7 +83,7 @@ $j^{th}$ part.
 
 \begin{figure}
 \centering
-\includegraphics[width=2.9in,height=0.7in]{fid/figures/with_without_pairwise.png}
+\includegraphics[width=4.5in,height=1.3in]{fid/figures/with_without_pairwise.png}
 \caption{From left to right, we observe input test image, output selection by kNN, output selection by optimization without structural costs and output selection by optimization with structural costs. Observe that the left eye prediction suffers in third image because of not considering structural costs for optimization.}
 \label{fig:with_without_structural_costs}
 \end{figure}

@@ -13,3 +13,31 @@ This subset of annotated images then serve as our basis for differentiating betw
 the various candidate algorithm outputs on any test image. The process of selecting 
 the best fitting fiducials on any test image, given the exemplars, is called
 output selection.
+
+ \begin{algorithm}[!h]
+  \caption{Algorithm for Exemplar Selection ({\tt ComputeDatasetExemplars})}
+\begin{algorithmic}
+  \INPUT Training image data $\mathcal{D}$, fiducials $\mathcal{F}_d$.
+  \STATE $\mathcal{E} = \varnothing$, $\mathcal{R} = \varnothing$, $\mathcal{S} = \varnothing$, $\mathcal{F} = \mathcal{F}_d$
+  \STATE $Cntrs$ = {\tt ComputeClusters}( $\mathcal{F}$, $N_{clus}$ )
+  \FOR{Each center $C_k \in Cntrs$}
+    \STATE $[ I_i, F_i ]$ = {\tt ClosestFiducial}( $\mathcal{F}$, $\mathcal{D}$, $C_k$ )
+    \STATE $Feat_i$ = {\tt ComputeFeatures}($I_i$, $F_i$)
+    \STATE $\mathcal{E}$ = $\mathcal{E} \cup \{I_i, F_i, Feat_i\}$
+    \STATE $\mathcal{F}$ = $\mathcal{F} \setminus F_i$
+  \ENDFOR
+  \FOR{Each image-fiducial pair $(I_i,F_i)$ in $(\mathcal{D},\mathcal{F}_d)$}
+    \STATE $Feat_i$ = {\tt ComputeFeatures}($I_i$, $F_i$)
+    \STATE $\mathcal{R}$ = $\mathcal{R} \cup  Feat_i $
+  \ENDFOR
+  \STATE $\mathcal{F} = \mathcal{F}_d$
+  \STATE $Cntrs^{app}$ = {\tt ComputeClusters}( $\mathcal{R}$, $N_{clus}$ )
+  \FOR{Each center $C_k$ in $Cntrs^{app}$}
+    \STATE $[ I_i, F_i, Feat_i ]$ = {\tt ClosestFeat}( $\mathcal{R}$, $\mathcal{F}$, $\mathcal{D}$, $C_k$ )
+    \STATE $\mathcal{S}$ = $\mathcal{S} \cup \{ I_i, F_i, Feat_i \}$
+    \STATE $\mathcal{R}$ = $\mathcal{R} \setminus Feat_i $, \qquad $\mathcal{F}$ = $\mathcal{F} \setminus F_i $
+  \ENDFOR
+  \OUTPUT $\mathcal{E}, \mathcal{S}$
+\end{algorithmic}
+\label{alg:exemplar_selection}
+\end{algorithm}

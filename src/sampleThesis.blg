@@ -1,0 +1,73 @@
+This is BibTeX, Version 0.99d (TeX Live 2015/Debian)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: sampleThesis.aux
+Case mismatch error between cite keys xhucvpr12_wild and xhuCVPR12_wild
+---line 11 of file sampleThesis.aux
+ : \citation{xhucvpr12_wild
+ :                         }
+I'm skipping whatever remains of this command
+Case mismatch error between cite keys xhucvpr12_wild and xhuCVPR12_wild
+---line 167 of file sampleThesis.aux
+ : \citation{xhucvpr12_wild
+ :                         }
+I'm skipping whatever remains of this command
+Case mismatch error between cite keys xhucvpr12_wild and xhuCVPR12_wild
+---line 171 of file sampleThesis.aux
+ : \citation{xhucvpr12_wild
+ :                         }
+I'm skipping whatever remains of this command
+Case mismatch error between cite keys xhucvpr12_wild and xhuCVPR12_wild
+---line 218 of file sampleThesis.aux
+ : \citation{xhucvpr12_wild
+ :                         ,DBLP:journals/corr/HassnerHPE14}
+I'm skipping whatever remains of this command
+The style file: latex8.bst
+Database file #1: sampleBib.bib
+Warning--empty publisher in NIPS2004_2566
+Warning--empty booktitle in Shalev-Shwartz:2004:OBL:1015330.1015376
+Warning--empty booktitle in Shental:2002:ALR:645318.649268
+Warning--empty booktitle in NIPS2014_5416
+Warning--empty publisher in NIPS2014_5416
+Warning--empty booktitle in Taigman_2014_CVPR
+You've used 55 entries,
+            2118 wiz_defined-function locations,
+            771 strings with 12908 characters,
+and the built_in function-call counts, 17647 in all, are:
+= -- 1533
+> -- 1069
+< -- 2
++ -- 417
+- -- 362
+* -- 1143
+:= -- 3012
+add.period$ -- 167
+call.type$ -- 55
+change.case$ -- 347
+chr.to.int$ -- 0
+cite$ -- 61
+duplicate$ -- 735
+empty$ -- 1457
+format.name$ -- 362
+if$ -- 3659
+int.to.chr$ -- 0
+int.to.str$ -- 55
+missing$ -- 54
+newline$ -- 279
+num.names$ -- 110
+pop$ -- 495
+preamble$ -- 1
+purify$ -- 291
+quote$ -- 0
+skip$ -- 419
+stack$ -- 0
+substring$ -- 482
+swap$ -- 107
+text.length$ -- 2
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 220
+warning$ -- 6
+while$ -- 124
+width$ -- 57
+write$ -- 564
+(There were 4 error messages)

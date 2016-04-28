@@ -1,6 +1,6 @@
 \begin{figure}
 \centering
-\includegraphics[width =12cm,height=4.2cm]{front/figures/test_exemplar_map.png}
+\includegraphics[width =15cm,height=5.2cm]{front/figures/test_exemplar_map.png}
 \caption{First row of images are the input profile images. Second row shows the retrieved faces from database.}
 \label{fig:test_exemplar_map}
 \end{figure}
@@ -35,8 +35,16 @@ The nearest exemplar is the one which has the least $ds^{ti}$.
 \begin{equation}
   i^* = \arg \min_{i} d^{ti}
 \end{equation}
-Given the nearest profile image $I_p^i$, we retrieve its frontal image and pose $I_f^i, P_f^i$.
+Given the nearest profile image $I_p^i$, we retrieve its frontal image and pose $I_f^i, P_f^i$ as shown in Figure~\ref{fig:face_space}.
 The first row of Figure~\ref{fig:test_exemplar_map} shows sample input faces and second row shows the
 nearest exemplars retrieved from $D$. Observe that men and women have slightly different facial
 structure, and this captured by our method, since women are retrieved as top exemplar candidates for
 input images of women. 
+
+\begin{figure}
+\centering
+\includegraphics[width =14cm,height=11cm]{front/figures/face_space.png}
+\caption{Figure shows the pictorial representation of faces in two dimensional pose space. Face with 
+the green box is the input image. Faces in blue box are the exemplar pair selected.}
+\label{fig:face_space}
+\end{figure}

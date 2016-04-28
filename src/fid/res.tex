@@ -1,3 +1,5 @@
+\label{sec:basic_algorithm}
+
 Thus far, we have outlined our approaches to fiducial detection in the previous sections.
 In this sections, we evaluate our algorithms on three state of the art datasets
 LFPW, COFW and AFLW. Before we present the quantitative result (produced in Table~\ref{table:ourBestResults_mean}) in the remaining
@@ -14,7 +16,7 @@ part of this section, we describe the 3 datasets in brief below.
 
 We have chosen 3 popular datasets to test the performance of our algorithm for several reasons.
 
-\subsection{LFPW}
+\textbf{LFPW}
 is the oldest dataset we consider~\cite{kumarPAMI13_faceExem}, and contains faces of several people in ``wild'' settings,
 with lots of occlusions and pose / expression variation. It contains 1035 images, out of which
 811 are used for training and 224 are used for testing purposes. Ground truth annotation of
@@ -22,7 +24,7 @@ training images in the form of 68 fiducial locations for each face is available 
 has been standard for some time, but current algorithms give very good performance 
 on it.
 
-\subsection{COFW}
+\textbf{COFW}
 is a dataset released by Burgos-Artizzu \etal~\cite{artizzzuICCV13_COFW}, and is
 specialzed to highlight situations where faces are occluded in a manner
 that hinders accurate fiducial detection by state-of-the-art algorithms.
@@ -31,7 +33,7 @@ It contains 1852 images, out of which
 training images in the form of 29 fiducial locations for each face is available to us. This dataset
 is relatively new, and moderate performances have been reported on it.
 
-\subsection{AFLW}
+\textbf{AFLW}
 is a dataset released by~\cite{koetsingerBFIAT11_AFLW}, and contains several annotated face images
 in extreme settings. It is considered one of the toughest datasets in fiducial detection
 literature~\cite{smithECCV14_ED,zhangECCV14_deepfacealign}, as it has larger pose variations, 

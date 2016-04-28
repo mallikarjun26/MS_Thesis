@@ -4,7 +4,7 @@ show superior performance compared to state-of-the-art on three datasets. In thi
 we analyze various components of our algorithm to illustrate how 
 our approach performs under different settings. Detailed results are provided in the website.
 
-\subsection{Runtime} For both approaches, candidate algorithms can be run in parallel and hence
+\textbf{Runtime} For both approaches, candidate algorithms can be run in parallel and hence
 the total time taken by them on an input image is the maximum time of any algorithm. As an overhead,
 we compute SIFT/HOG based features on the output of these algorithms, which measures in milliseconds
 since fast GPU based approaches are available for such computations. On top of that, the output selection 
@@ -13,7 +13,7 @@ part uses Euclidean distance computation for kNN, which amounts to 5 (candidate 
 Finally, the optimization algorithm takes 0.4 seconds to converge for a single input image on a 
 Intel(R) Xeon(R) CPU E5-2640 0 @ 2.50GHz system.
 
-\subsection{SIFT vs HoG}
+\textbf{SIFT vs HoG}
 \label{subsec:sift_vs_hog_vs_both}
 %Algorithm~\ref{alg:feature_computation} outlines our approach to compute SIFT and HOG features
 %around fiducial locations in a face image. In this experiment, we contrast the contribution of SIFT
@@ -38,9 +38,9 @@ methods.
 \begin{figure}
   \centering
   \subfloat[ ]{
-  \includegraphics[width=2.2in,height=1.7in]{fid/figures/hogvsift/mean_normalized_error.png}}
+  \includegraphics[width=3.2in,height=2.5in]{fid/figures/hogvsift/mean_normalized_error.png}}
   \subfloat[ ]{
-  \includegraphics[width=2.2in,height=1.7in]{fid/figures/hogvsift/failure_rate.png}
+  \includegraphics[width=3.2in,height=2.5in]{fid/figures/hogvsift/failure_rate.png}
   \label{fig:sift_vs_hog}}
   \\
   %\subfloat[ ]{
@@ -110,7 +110,7 @@ methods.
 % % occluded, and thus the first nearest neighbor selected is still very accurate with respect to pose and appearance
 % % variation.                                                                     
 % 
-\subsection{Varying Number of Exemplars}
+\textbf{Varying Number of Exemplars}
 \label{subsec:varying_number_of_exemplars}
 Varying the number of exemplars ideally affects the accuracy of fiducial location, since
 more exemplars should typically mean that the nearest neighbor
@@ -118,7 +118,7 @@ more exemplars should typically mean that the nearest neighbor
 variations in pose, expression, partial occlusion have been already captured, increasing the number
 of exemplars will have minimal effect on accuracy. This is precisely what we observe in
 Figure~\ref{fig:num_exemplars}.
-\subsection{Optimization with structural costs}
+\textbf{Optimization with structural costs}
 \label{subsec:with_without_structural_costs}
 In this experiment, we show qualitative result of output selection by optimization with and without
 structural costs. Structural costs help in optimizing to a solution which looks like face. If only
@@ -126,8 +126,8 @@ appearance costs are used, it leads to just selecting best looking fiducials ind
 
 \begin{figure}
   \centering
-  \includegraphics[width=1.5in,height=1.0in]{fid/figures/iccv_version_one/cofw/num_of_exemplars/mean_err_modified.jpg}
-  \includegraphics[width=1.5in,height=1.0in]{fid/figures/iccv_version_one/cofw/num_of_exemplars/fail_rate_modified.jpg}
+  \includegraphics[width=3.0in,height=2.5in]{fid/figures/iccv_version_one/cofw/num_of_exemplars/mean_err_modified.jpg}
+  \includegraphics[width=3.0in,height=2.5in]{fid/figures/iccv_version_one/cofw/num_of_exemplars/fail_rate_modified.jpg}
   \caption{ Comparison of mean error and failure rate when the number of exemplars is increased.
   Results O1-O5 correspond to our algorithm with number of exemplars (20, 30, 40, 50, 60)
   respectively.
@@ -139,11 +139,11 @@ appearance costs are used, it leads to just selecting best looking fiducials ind
 % % \label{subsec:manual_vs_automatic}
 % % Manual vs automatic experiment.
  
-\subsection{Shape vs Appearance}
+\textbf{Shape vs Appearance}
 \label{subsec:shape_vs_appearance}
 Algorithm~\ref{alg:exemplar_selection} outlines our approach of using both shape specific and
 appearance specific exemplars in output selection. In this experiment, we measure the relative
-importance of each type of exemplar. Figure (refer supplementary material) shows results of our
+importance of each type of exemplar. Figure shows results of our
 experiment, where we find that both have almost equal contributions to the superiority of 
 output selection in comparison to competing methods.
 % % In Algorithm~\ref{alg:exemplar_selection}, we outline our approach to compute shape specific and
@@ -158,12 +158,11 @@ Shape based exemplars provide robustness to partial occlusion, since they are be
 non-occluded fiducials, and generally result in nearest neighbors that are closer in pose to the
 test image. On the other hand, while appearance based exemplars falter in the presence of occlusion,
 they are better at identifying more accurate fiducials when all candidate algorithms give accurate outputs.
-Please refer to supplementary for additional outputs.
 
  \begin{figure}
   \centering
-  \subfloat[]{\includegraphics[width=1.35in,height=1.2in]{fid/figures/shapevsapp/mean_error.png}\label{fig:sva_shape_mean}}
-  \subfloat[]{\includegraphics[width=1.35in,height=1.2in]{fid/figures/shapevsapp/failure_rate.png}\label{fig:sva_shape_fail}}
+  \subfloat[]{\includegraphics[width=3.2in,height=2.5in]{fid/figures/shapevsapp/mean_error.png}\label{fig:sva_shape_mean}}
+  \subfloat[]{\includegraphics[width=3.2in,height=2.5in]{fid/figures/shapevsapp/failure_rate.png}\label{fig:sva_shape_fail}}
   \caption{ Comparison of mean error and failure rates for the shape vs appearance experiment. Best viewed in color. }
   \label{fig:shape_vs_appearance}
 \end{figure}
@@ -171,14 +170,14 @@ Please refer to supplementary for additional outputs.
 % %\paragraph{Illumination Normalization}
 % %\vspace{1in}
  
-\subsection{Clustering vs Eigenspace Analysis}
+\textbf{Clustering vs Eigenspace Analysis}
 \label{subsec:clustering_vs_eigenspace}
 While {\tt kmeans} has been the preferred choice of clustering method for
 Algorithm~\ref{alg:exemplar_selection}, we also experimented with using principal component
 analysis (PCA) instead. In order to select exemplars using PCA, we construct a shape matrix
 where each column represents an exemplar, and find its top $20$ principal components. We then
 select one exemplar per component such that it maximizes its dot product with the corresponding
-principal component. Results, shown in the supplementary material, show negligible difference
+principal component. Results, show negligible difference
 between the two approaches. We repeated the same experiment with appearance exemplars with similar
 results.
 % % In the previous experiment, we compared the effect of shape based and appearance based exemplars on
@@ -200,14 +199,14 @@ results.
 % % failure rates, while mean errors are similar in both cases. Additional results can be found in the
 % % supplementary material.
 % 
-% % \begin{figure}
-% %   \centering
-% %   \includegraphics[width=1.5in,height=1.0in]{figures/iccv_version_one/cofw/kmeans_shape_vs_kmeans_pca/mean_err_modified.jpg}
-% %   \includegraphics[width=1.5in,height=1.0in]{figures/iccv_version_one/cofw/kmeans_shape_vs_kmeans_pca/fail_rate_modified.jpg}
-% %   \caption{ Comparison of exemplars for kmeans vs PCA. O1 represents our basic result and O2
-% %   represents PCA based results. Best viewed in color }
-% %   \label{fig:kmeans_vs_pca}
-% % \end{figure}
+\begin{figure}
+  \centering
+  \includegraphics[width=3.0in,height=2.5in]{fid/figures/iccv_version_one/cofw/kmeans_shape_vs_kmeans_pca/mean_err_modified.jpg}
+  \includegraphics[width=3.0in,height=2.5in]{fid/figures/iccv_version_one/cofw/kmeans_shape_vs_kmeans_pca/fail_rate_modified.jpg}
+  \caption{ Comparison of exemplars for kmeans vs PCA. O1 represents our basic result and O2
+  represents PCA based results. Best viewed in color }
+  \label{fig:kmeans_vs_pca}
+\end{figure}
 % 
 % %%%  \begin{table}
 % %%%   \begin{tabular}{|c|c|c|c|c|c|}
@@ -218,33 +217,31 @@ results.
 % %%%   \caption{Results on the COFW dataset.}
 % %%% \end{table}  
 % 
-% \paragraph{Euclidean distance vs Metric Learning}
-% \label{subsec:euc_vs_metric}
-% 
-% We also performed an experiment to compare the performance of our algorithm when we use euclidean distance and
-% Mahalanobis distance to find the similarity score between candidate results on a test image and exemplars. 
-% We learn
-% the transformation matrix based on~\cite{weinberger09distance}. The authors learn the metric with the objective of
-% minimizing the distance of $k$ nearest samples belonging to same class in the transformed domain and
-% maximizing if the samples are of different class. Here we compute transformation matrix for each of
-% the part in one vs rest fashion. Appearance feature vector (SIFT and HoG) computed given the ground
-% truth location for a part is considered to be of one class and appearance feature vector of other
-% parts are considered to be of another class. Transformation matrix is learnt. Learnt matrix is used
-% to compute the similarity score for each of the part prediction in the test sample with the part in
-% the exemplar. We use 200 samples for each part with the feature dimension of 535. 
-% Please refer to supplementary material for figures. We note that insignificant improvement is
-% obtained
-% using metric learning.
-% Figure [x] shows the failure rate analysis of different datasets. We see similarity score computed
-% using Euclidean distance performs consistently better compared to Mahalanobis distance. Also observe
-% that the more challenging the dataset gets, worse the failure rate using Mahalanobis distance. Hence
-% exemplar methods are more suitable with Euclidean distance as compared to Mahalanobis distance as it
-% tries to generalize across variation. 
+\textbf{Euclidean distance vs Metric Learning}
+\label{subsec:euc_vs_metric}
 
-% \begin{figure}
-%   \centering
-%   \includegraphics[width=1.5in,height=1.0in]{figures/iccv_version_one/cofw/wo_metric_vs_w_metric/mean_err_modified.jpg}
-%   \includegraphics[width=1.5in,height=1.0in]{figures/iccv_version_one/cofw/wo_metric_vs_w_metric/fail_rate_modified.jpg}
-%   \caption{ Comparison of Metric Learning Result. }
-%   \label{fig:metric_learning}
-% \end{figure}
+We also performed an experiment to compare the performance of our algorithm when we use euclidean distance and
+Mahalanobis distance to find the similarity score between candidate results on a test image and exemplars. 
+We learn the transformation matrix based on~\cite{weinberger09distance}. Metric is learnt with the objective of
+minimizing the distance of $k$ nearest samples belonging to same class in the transformed domain and
+maximizing if the samples are of different class. Here we compute transformation matrix for each of
+the part in one vs rest fashion. Appearance feature vector (SIFT and HoG) computed given the ground
+truth location for a part is considered to be of one class and appearance feature vector of other
+parts are considered to be of another class. Transformation matrix is learnt. Learnt matrix is used
+to compute the similarity score for each of the part prediction in the test sample with the part in
+the exemplar. We use 200 samples for each part with the feature dimension of 535. 
+We note that insignificant improvement is obtained using metric learning.
+Figure ~\ref{fig:metric_learning} shows the failure rate analysis of different datasets. 
+%We see similarity score computed
+%using Euclidean distance performs consistently better compared to Mahalanobis distance. Also observe
+%that the more challenging the dataset gets, worse the failure rate using Mahalanobis distance. Hence
+%exemplar methods are more suitable with Euclidean distance as compared to Mahalanobis distance as it
+%tries to generalize across variation. 
+
+\begin{figure}
+  \centering
+  \includegraphics[width=3.0in,height=2.5in]{fid/figures/iccv_version_one/cofw/wo_metric_vs_w_metric/mean_err_modified.jpg}
+  \includegraphics[width=3.0in,height=2.5in]{fid/figures/iccv_version_one/cofw/wo_metric_vs_w_metric/fail_rate_modified.jpg}
+  \caption{ Comparison of Metric Learning Result. O1 represents our results with Euclidean metric and O2 with learnt metric.}
+  \label{fig:metric_learning}
+\end{figure}

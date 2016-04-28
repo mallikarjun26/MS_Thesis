@@ -1,29 +1,29 @@
-Facial fiducial detection is an important problem with applications in facial expression 
-recognition, gaze identification, face recognition etc. The task of identifying \emph{several}
-locations for different components of a face in an image like ears, nose, mouth etc. becomes
-very daunting considering that each part might have a much more non-distinctive appearance
-profile than an entire face, and could also be subject to complete occlusion
-(Figure~\ref{fig:init_fig}, second row, eyes), drastic appearance and illumination variation
-(Figure~\ref{fig:init_fig}, third row, pose) or expression variation
-(Figure~\ref{fig:init_fig}, first row, mouth).
-Though there is no consensus
-yet on even the number of fiducial points assigned to a face~\cite{smithECCV14_ED}, there is a
-broad realization among recent papers for the necessity to reduce failure rates and increase
-the accuracy of fiducial detection in a wide variety of challenging examples~\cite{smithECCV14_ED,
-zhouICCV13_EGM, koetsingerBFIAT11_AFLW, kumarPAMI13_faceExem,artizzzuICCV13_COFW,yuECCV14_CoR},
-since it automatically lends to better performance of systems that rely on fiducial detection.
-
 \begin{figure}
     \centering
     \includegraphics[width=3.5in, height=3in]{fid/figures/first_page.png}
-    \label{fig:init_fig}
     \caption{ Fiducial detection of Chehra [3](red points), Zhu
               et al. [32](green points), Intraface [24](magenta points) and
               RCPR [8](cyan points) can be observed in column 1, 2, 3
               and 4 respectively. Output selection by kNN is highlighted
               in green boxes. Last column shows the output selection by
               optimization highlighted in blue box. Best viewed in color.}
+    \label{fig:first_page}
 \end{figure}
+
+Facial fiducial detection is an important problem with applications in facial expression 
+recognition, gaze identification, face recognition etc. The task of identifying \emph{several}
+locations for different components of a face in an image like ears, nose, mouth etc. becomes
+very daunting considering that each part might have a much more non-distinctive appearance
+profile than an entire face, and could also be subject to complete occlusion
+(Figure~\ref{fig:first_page}, second row, eyes), drastic appearance and illumination variation
+(Figure~\ref{fig:first_page}, third row, pose) or expression variation
+(Figure~\ref{fig:first_page}, first row, mouth).
+Though there is no consensus
+yet on even the number of fiducial points assigned to a face~\cite{smithECCV14_ED}, there is a
+broad realization among recent papers for the necessity to reduce failure rates and increase
+the accuracy of fiducial detection in a wide variety of challenging examples~\cite{smithECCV14_ED,
+zhouICCV13_EGM, koetsingerBFIAT11_AFLW, kumarPAMI13_faceExem,artizzzuICCV13_COFW,yuECCV14_CoR},
+since it automatically lends to better performance of systems that rely on fiducial detection.
 
 While a number of different approaches like active shape models~\cite{milborrowCVPR08_ASM},
 regression based methods~\cite{yuECCV14_CoR}, cascaded neural
@@ -48,7 +48,7 @@ decent complementarity in performance, which could be identified and exploited.
 % Considering the recent surge in the number of approaches to face fiducial detection,
 % and considering their complimentary advantages, it makes sense to attempt a 
 % multi-modal approach to fiducial detection. 
-In this paper, we present two algorithms that build on top of recent results in this space. 
+In this thesis, we present two algorithms that build on top of recent results in this space. 
 Our kNN based algorithm is simple and effective, while our optimization algorithm provides a 
 flexible framework to incorporate complicated models.  Specifically, our 
 algorithms use several state-of-the-art candidate algorithms~\cite{xhuCVPR12_wild, xiongCVPR13_SDM,
@@ -90,7 +90,7 @@ characteristics
 %   \label{fig:example_illustration}
 % \end{figure*}
 
-The outline of our paper is as follows. In section~\ref{sec:related_work}, we review related work
+The outline of this chapter is as follows. In section~\ref{sec:related_work}, we review related work
 with a perspective to distill out complimentary advantages of different approaches to
 fiducial detection. This is followed in section~\ref{sec:face_fiducial_detection} by the 
 formulation in section~\ref{subsec:formulation} and outline 

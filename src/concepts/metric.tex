@@ -17,6 +17,13 @@
 % We use LMNN
 % Formulation
 
+\begin{figure}
+    \centering
+    \includegraphics[width=5in, height=1.6in]{concepts/figures/metric_learning_example.png}
+    \caption{Pictorial representation of one input's local neighbourhood.}
+    \label{fig:metric_learning_example}
+\end{figure}
+
 Type of metric used to measure between two points in KNN algorithm plays an important role 
 in determining its performance. If no prior knowledge of the data is available, KNN algorithm
 is generally used with Euclidean distance measure. Since Euclidean metric doesn't hold any
@@ -66,8 +73,8 @@ to learn a Mahalanobis metric specifically designed for KNN classification. LMNN
 intuitive idea that the test sample would be classified correctly if it lies near to samples of
 same label. LMNN learns a linear transformation by minimizing a loss function that consists of 
 two terms, where first term ensures the samples matching the labels are pulled together and 
-second term pushes the samples with non-matching labels with large margin.
-
+second term pushes the samples with non-matching labels with large margin. Pictorially, it can
+be represented as in Figure~\ref{fig:metric_learning_example}
 
 % One can learn the parameters in Matrix M with M constrained to be a positive-semidefinite matrix to
 % guarantee positive distances between any two points.

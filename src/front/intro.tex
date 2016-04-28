@@ -1,7 +1,7 @@
 Facial analysis in images for recognition/manipulation is a widely addressed and commercially important problem. 
 Its applications range from surveillance to automatic tagging of photos on social websites. 
 Recently, there are papers producing convincing results on {\em in-the-wild}
-datasets~\cite{Ramanan:2012:FDP:2354409.2355119,DBLP:journals/corr/HassnerHPE14}. These
+datasets~\cite{xhucvpr12_wild,DBLP:journals/corr/HassnerHPE14}. These
 datasets differ from previous ones in their unconstrained nature of image capture.
 However such methods have two drawbacks. Firstly, a lot of these methods have degraded performance in profile view vs frontal view. 
 Secondly, they require lot of training data~\cite{HuLT14}. One way to alleviate both problems is to be able 
@@ -14,14 +14,14 @@ structure. Eigen analysis~\cite{Belhumeur:1997:EVF:261506.261512}, for example, 
 \label{fig:sample_result}
 \end{figure}
 
-In this paper, we show that a pre-processing step of synthesizing frontal pose of the face
+In this thesis, we show that a pre-processing step of synthesizing frontal pose of the face
 significantly improves the accuracy of face recognition. Face frontalization is the process of
 synthesizing frontal pose of the face, given a profile view of the face as shown in
 Figure~\ref{fig:sample_result}. This step helps in simplifying the task of face recognition as
 recognition systems have more information and less occlusion to work with. Few methods counter this
 {\em frontalization} problem, by choosing to extract features only at the salient locations.
 Unfortunately, this leads to loss of structural relation between various parts of the face. However,
-as we will show in this paper, our method preserves this information as well. 
+as we will show that our method preserves this information as well. 
 
 Apart from aiding face recognition systems, frontalization techniques can also be used to generate a video out of a single image 
 and can find applications in animation~\cite{conf/fgr/SaragihLC11a}. For example, if a family photograph has some people 

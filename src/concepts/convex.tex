@@ -10,7 +10,7 @@ spaces and the type of function which defines the outcome, we can categorize the
 optimization problem in various types. We describe few types of optimization and 
 its solutions which are relevant to this thesis in the following section.
 
-\bf{Linear optimization} is special case of mathematical optimization in which the
+\textbf{Linear optimization} is special case of mathematical optimization in which the
 solution space is defined by the linear equality and inequality constraints with
 a linear objective function. The solution space is a convex polytope. Linear
 optimization problem can be canonically represented as
@@ -23,5 +23,21 @@ matrix and $b$ is vector which defines the solution space. There are various
 algorithms like \textit{Simplex algorithm, Criss-Cross algorithm, Interior 
 point method}, which can solve for global optimum.
 
-\bf{Quadratic programming} is another special case of mathematical optimization
-with a quadratic objective function subjected to linear constraints.
+\textbf{Quadratic programming} is another special case of mathematical optimization
+with a quadratic objective function subjected to linear constraints. It can be
+formulated as follows,
+
+\begin{equation}
+O(x) = \arg\max_x{(\frac{1}{2}x^TQx + c^Tx)}
+\end{equation}
+subjected to $Ax < b$. $Q$ is real symmetric matrix. Similar to linear programming,
+there are many algorithms like \textit{Interior point, gradient projection, conjugate
+gradient} to solve general problems.
+
+\textbf{Qudratically constrained quadratic program} is another case similar to
+Quadratic programming, but with both objective and constraints are quadratic functions.
+
+In this thesis, we end up with a linear objective function with quadratic constraints
+and solutions need to be integers. Since it can not be solved in polynomial time, we 
+aim to get approximate solution with integer relaxation and solve it as linear 
+optimization problem.
