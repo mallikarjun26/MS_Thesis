@@ -76,6 +76,16 @@ S.~Chopra, R.~Hadsell, and Y.~LeCun.
   Computer Vision and Pattern Recognition (CVPR'05) - Volume 1 - Volume 01},
   2005.
 
+\bibitem{Criminisi:2004:RFO:2319036.2320602}
+A.~Criminisi, P.~Perez, and K.~Toyama.
+\newblock Region filling and object removal by exemplar-based image inpainting.
+\newblock {\em Trans. Img. Proc.}, 2004.
+
+\bibitem{conf/cvpr/CriminisiPT03}
+A.~Criminisi, P.~Pérez, and K.~Toyama.
+\newblock Object removal by exemplar-based inpainting.
+\newblock In {\em CVPR (2)}, 2003.
+
 \bibitem{Cristinacce2006}
 D.~Cristinacce and T.~Cootes.
 \newblock Feature detection and tracking with constrained local models.
@@ -100,6 +110,11 @@ J.~Goldberger, G.~E. Hinton, S.~T. Roweis, and R.~R. Salakhutdinov.
 R.~Gross, I.~Matthews, and S.~Baker.
 \newblock Generic vs. person specific active appearance models.
 \newblock {\em IMAVIS}, 23(12):1080--1093, 2005.
+
+\bibitem{Hartley2004}
+R.~I. Hartley and A.~Zisserman.
+\newblock {\em Multiple View Geometry in Computer Vision}.
+\newblock Cambridge University Press, ISBN: 0521540518, 2004.
 
 \bibitem{DBLP:journals/corr/HassnerHPE14}
 T.~Hassner, S.~Harel, E.~Paz, and R.~Enbar.
@@ -182,6 +197,12 @@ S.~Shalev-Shwartz, Y.~Singer, and A.~Y. Ng.
 \newblock Online and batch learning of pseudo-metrics.
 \newblock ICML '04, 2004.
 
+\bibitem{Shen:2012:DHG:2206425.2206457}
+X.~Shen, G.~Hua, L.~Williams, and Y.~Wu.
+\newblock Dynamic hand gesture recognition: An exemplar-based approach from
+  motion divergence fields.
+\newblock {\em Image Vision Comput.}, 2012.
+
 \bibitem{shenCVPR13_retrieval}
 X.~Shen, Z.~Lin, J.~Brandt, and Y.~Wu.
 \newblock Detecting and aligning faces by image retrieval.
@@ -249,6 +270,12 @@ K.~Weinberger and L.~Saul.
 D.~Weinland and E.~Boyer.
 \newblock Action recognition using exemplar-based embedding.
 \newblock In {\em CVPR}, 2008.
+
+\bibitem{weinland:inria-00544741}
+D.~Weinland, E.~Boyer, and R.~Ronfard.
+\newblock {Action Recognition from Arbitrary Views using 3D Exemplars}.
+\newblock In {\em {ICCV 2007 - 11th IEEE International Conference on Computer
+  Vision}}, 2007.
 
 \bibitem{Wolf}
 L.~Wolf, T.~Hassner, and Y.~Taigman.
