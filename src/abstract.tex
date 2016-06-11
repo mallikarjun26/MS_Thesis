@@ -5,36 +5,46 @@
 % to be effective. In this thesis, we propose exemplar based approach for both face fiducial 
 % detection and face frontalization.
 
+% face detection
+% face recognition
+% facial reenactment
+% facial expression analysis
+% gender detection
 
-Computer vision systems concerning face images play a vital role in security and other commercial applications. 
-There has been decades of research work done by the vision community in solving the fundamental problems
-such as face fiducial detection, face recognition, gender detection etc. Solving these problems
-leads to interesting applications in surveillance, animation industries. 
+Computer vision solutions such as face detection and recognition, facial reenactment, facial expression analysis
+and gender detection have seen fruitful applications in various domains such as security, surveillance, social media 
+and animation. Many of the above solutions have common pre-processing steps such as fiducial detection, appearance
+modeling, face structural modelings \etc. These steps can be considered as fundamental problems to be solved in building any
+computer vision solutions concerning face images.
 
-In this thesis, we consider two fundamental problems. First, we discuss the problem of face fiducial
-detection and secondly the problem of face frontalization. Exemplar based approaches have been proved 
-to work in diverse problems such as object detection~\cite{malisiewicz-iccv11}, image impainting~\cite{Criminisi:2004:RFO:2319036.2320602}, 
-object removal~\cite{conf/cvpr/CriminisiPT03}, action 
-recognition~\cite{weinland:inria-00544741}, gesture recognition~\cite{Shen:2012:DHG:2206425.2206457}. 
-These approaches directly utilizes the information residing in the examples to achieve a certain 
+% Computer vision systems concerning face images play a vital role in security and other commercial applications. 
+% There has been decades of research work done by the vision community in solving the fundamental problems
+% such as face fiducial detection, face recognition, gender detection etc. Solving these problems
+% leads to interesting applications in surveillance and animation industries. 
+
+In this thesis, we propose exemplar based approaches to solve two fundamental problems, such as face fiducial 
+detection and face frontalization. Exemplar based approaches have been proved 
+to work in various computer vision problems, such as object detection, image impainting, 
+object removal, action 
+recognition, gesture recognition. 
+This approach directly utilizes the information residing in the examples to achieve a certain 
 objective, instead of coming up with a model representing all the examples and has shown to be effective. 
-In this thesis, we propose exemplar based approach for both face fiducial detection and face frontalization.
 
 Face fiducial detection involves detecting key points on the faces such as eye corner, nose tip, mouth tips
-etc. Fiducial detection is one of the main pre-processing step done for face recognition, animation, 
+\etc. It is one of the main pre-processing step done for face recognition, facial animation, 
 gender detection, gaze identification and expression recognition systems.
-Number of different approaches like active shape models~\cite{milborrowCVPR08_ASM}, regression based 
-methods~\cite{yuECCV14_CoR}, cascaded neural networks~\cite{zhangECCV14_deepfacealign}, tree based methods
-~\cite{xhuCVPR12_wild} and exemplar based approaches~\cite{kumarPAMI13_faceExem} have been proposed in the 
+Number of different approaches like active shape models, regression based 
+methods, cascaded neural networks, tree based methods
+ and exemplar based approaches have been proposed in the 
 recent past. Many of these algorithms only address part of the problems in this area. We propose an 
-exemplar based approach which takes adavantage of the complimentarity of different approaches and achieve
+exemplar based approach which takes advantage of the complimentarity of different approaches and achieve
 consistently superior performance over the state-of-the-art methods. We provide extensive experiments 
 over three popular datasets.
 
 Face frontalization is the process of synthesizing frontal view of the face given a non-frontal view. 
-Frontalization is used in intelligent photo editing tools and also aids in improving the accuracy of face
+Method proposed for frontalization can be used in intelligent photo editing tools and also aids in improving the accuracy of face
  recognition systems. Methods previously proposed involve estimating the 3D model or assuming a generic
-3D model of the face. Esitmating an accurate 3D model of the face is not a completely solved problem and 
+3D model of the face. Estimating an accurate 3D model of the face is not a completely solved problem and 
 assumption of generic 3D model of the face results in loss of crucial shape cues. We propose an exemplar
-based approach which doesn't involve estimating a 3D model. We show that our method performs consistently
-better than the other approach considered and also efficient.
+based approach which does not require 3D model of the face. We show that our method is efficient and performs consistently
+better than other approaches.
