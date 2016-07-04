@@ -1,0 +1,17 @@
+Tim Cootes
+
+- model with parameters
+    - try to find the parameters which makes the model fit the data
+
+- template matching 
+- hand crafted model
+- fourier series to represent the shape 
+- active contour models -> minimize energy of curves. No strict constraints. Might perform well on cell 
+
+- bottom up approach difficult in converging
+
+
+- So model with some parameter
+- Iteratievely figure out the next best Y after taking care of theta, scale and translation
+
+

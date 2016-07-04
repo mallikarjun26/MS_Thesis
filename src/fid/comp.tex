@@ -1,0 +1,36 @@
+\label{sec:complementarity_sec}
+% - Part based model. 
+%   - Part models for part in all poses
+% - Regression.
+%   - Fine tuning
+% - RCPR 
+%   - Explicitly model occlusion as well
+
+In this section, we discuss the reason and degree of complementarity between \textit{state-of-the-art}
+methods. Methods initially proposed worked on datasets which consists of mostly frontal view faces~\cite{MaB1998} in 
+a lab environment. Since the practical scenarios leads to much more complicated settings, \textit{in-the-wild} 
+sort of datasets~\cite{koetsingerBFIAT11_AFLW}, \cite{artizzzuICCV13_COFW}, \cite{kumarPAMI13_faceExem} were released.
+Deformable part based methods~\cite{xhuCVPR12_wild} model each part of the face separately. Also, since same part can 
+look significantly different in different poses, separate model are considered. This leads to a better performance in 
+profile view faces. Most of the regression based model does not consider this scenarios. Regression based methods 
+tend to fairly do well in getting the accurate estimation in frontal view faces as compared to that of part based
+methods. Since Artizzu \etal~\cite{artizzzuICCV13_COFW} explicitly model occlusion during training, they do well 
+in the case of occluded faces. Table\ref{table:complementarity} shows the complementarity performance of various
+methods. Best performing experiment is done by selecting candidate algorithm output nearest to ground truth by 
+simple Euclidean metric. And average experiment was performed by averaging the estimates of all candidate algorithms.
+
+\begin{table}%[!h]
+   \centering
+   \begin{tabular}{c c c c c c c c}
+    \toprule[1.5pt]
+     {\bf Chehra} &  {\bf Zhu} &  {\bf Intraface} &  {\bf RCPR} & {\bf Ours} & {\bf Ours} & {\bf Avg} & {\bf Best}\\
+     & & & & \bf(kNN) & \bf(Opt) & & \\
+    \midrule
+    7.21 & 7.60 & 7.79 & 9.28 & 4.31 & 4.83 & 12.43 & 2.56 \\ 
+    \bottomrule[1.5pt]
+    \end{tabular}
+    \caption{Table shows the failure rates of various \textit{state-of-the-art} methods and also the failure rate 
+    considering the average of all the estimates and selecting the best performing fiducial among the methods for 
+    COFW dataset.}
+    \label{table:complementarity}
+\end{table}
