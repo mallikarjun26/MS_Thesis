@@ -18,20 +18,20 @@
 \end{figure}
 
 KNN is one of the simplest and effective classification algorithm used in the community. 
-If one doesn't know the distribution of data at hand, it is generally preferred to go 
+If one does not know the distribution of the data at hand, it is generally preferred to go 
 with KNN as wrong assumption of distribution in other algorithms leads to bad performance.
 KNN is an instance based learning or lazy learning as it depends on the samples from a 
-small neighbourhood. All the training data is carried over till testing phase, where the 
+small neighborhood. All the training data is carried over till testing phase, where the 
 label of the unknown test data is classified to a label represented by the majority label
-of its k-nearest neighbours. Figure~\ref{fig:sample_knn_example} shows the example for labeling the test sample when
+of its k-nearest neighbors. Figure~\ref{fig:sample_knn_example} shows the example for labeling the test sample when
 K is equal to one and four.
 
 The performance of KNN is dependent on the chosen value of K and also the distance metric
-used. The neighbourhood distance of the sample depends on the Kth nearest neighbour. 
-Different K results in different distances and different conditional probablities. If value
-of K is very small, sample ends up with a small neighbourhood and could result in poor
-performance because of data sparseness, noise, ambiguous or poorly labelled data. If we
-try to smoothen bad effects by increasing the value of K, it results in introduction of 
+used. The neighborhood distance of the sample depends on the Kth nearest neighbor. 
+Different K results in different distances and different conditional probabilities. If value
+of K is very small, sample ends up with a small neighborhood and could result in poor
+performance because of data sparseness, noise, ambiguous or poorly labeled data. If we
+try to smoothen the effects by increasing the value of K, it results in introduction of 
 outliers from other class and result in over smoothing.
 
 In our experiments, we use KNN in classification setting. Assuming face fiducial detection

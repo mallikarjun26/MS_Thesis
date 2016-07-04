@@ -1,5 +1,56 @@
-In this thesis, we have proposed exemplar based approaches for face fiducial detection and frontalization.
-We showed that our approaches in general outperform \textit{state-of-the-art} methods on popular datasets.
-We believe when the data at hand is diverse to a great extent but and single model can not capture the 
-diversity, it's better to go for exemplar based approaches.
+% Framework
+% Conceptual simple
+% Easily interpretable
+% Efficient
+% Association instead of modelling
 
+\begin{chapquote}{Jeff Hawkins} 
+The human cortex is particularly large and therefore has a massive memory
+capacity. It is constantly predicting what you will see, hear, and feel, mostly in
+ways you are unconscious of. These predictions are our thoughts, and, when
+combined with sensory input, they are our perceptions. I call this view of the brain
+the memory-prediction framework of intelligence. 
+
+\end{chapquote}
+
+If the machines ever to reach the capabilities of human brain, we ought to try things 
+which are biologically inspired. Geared with the massive memory capability and growth 
+of distributed computing, we hope that many of the computer vision problems can be 
+formulated as memory association problem as compared to other traditional methods. 
+Apart from conceptually simple, this sort of framework gives additional advantage of 
+easy interpretability and parallelizability.
+
+Following the above intuition, this thesis proposed exemplar based approaches for face 
+fiducial detection and frontalization. Each of the method efficiently utilizes the 
+information from the exemplars to achieve two different objectives. Both the approaches
+are easy to interpret for any outcome. While the face fiducial detection uses both the
+appearance information and structural information, face frontalization utilizes the 
+strutural information of face from the exemplar database. 
+
+\section{Summary}
+We showed that our approaches in general outperform \textit{state-of-the-art} methods on 
+popular datasets. We believe when the data at hand is diverse to a great extent and single 
+model can not capture the diversity, it's better to go for exemplar based approaches.
+With the availability of large amount of data and very good distributed frameworks, we
+hope the community formulate various computer vision problems as memory association 
+framework.
+
+\section{Future Direction}
+% - Complementarity 
+% - Semantic fea    
+
+In this final section, we discuss how related research fields can also benifit from 
+the methods proposed in this thesis, as well as directions in which the proposed methods
+can be extended for further improvement.
+\begin{itemize}
+    \item Meta algorithm proposed in Chapter ~\ref{ch:fid} can be extended to problems such
+    as Human Pose estimation where there is enough hand annotated data to be used as exemplars
+    and possible structures are fairly limited.
+    \item Section ~\ref{sec:complementarity_sec} shows the quantitative analysis of degree of 
+    complementarity in the various candidate algorithms for face fiducial detection. Since there 
+    is huge scope for improvement, we hope this opens up new direction for further research.
+    \item In the Chapter ~\ref{ch:fid}, we proposed two algorithms for fiducial detection, one which selects the entire output
+    of one of the candidate algorithm and other which selects best performing parts from each of the
+    candidate algorithm. Selection as whole performs better than that of by parts. Since the 
+    optimization framework allows only for approximate solution, there is scope to improve accuracy by other means. 
+\end{itemize}

@@ -1,49 +1,49 @@
-Computer vision as a field includes making inference out of images and videos. There has been decades of research 
-happening in this field. We have seen fruitful applications achieved in various domains. Be it 
-reconstruction of 3D world which helps in automatic car navigation, analysis of medical images for 
-early detection of diseases, analysis of astronimical images to study universe in general, biometric
+Computer vision is a field that includes making inference out of images and videos. There has been decades of research 
+happening in this field. We have seen fruitful applications deployed in various domains. Be it 
+reconstruction of 3D world, which helps in automatic car navigation, analysis of medical images for 
+early detection of diseases, analysis of astronomical images to study universe in general, bio-metric
 systems for security purposes using finger print or face images. Even though there has been decades of 
-research, problems mentioned above are not completely solved as there is demand for more precision
-and efficient solutions. Technological advancement from other ends such as camera capablilites,
-computational capacity aids in solving problems which were not feasible earlier.
+research effort, problems mentioned above are not completely solved as there is demand for more precision
+and efficient solutions. Technological advancement from other ends such as camera capabilities,
+computational capacity aids in solving problems which were not feasible earlier and also in improving 
+existing solutions.
 
-In this thesis, we are going to concentrate on approaches and applications on face images. We have seen
-a lot of generic problems such as face detection, face recognition, expression detection, gaze
-identification, face renactment \etc  currently being under research and also deployed in various 
-systems. Most of the above system depends on pre-processing steps such as representation, face fiducial 
-detection, tranformation \etc which influences the effectiveness to a great extent. Specifically in this
-thesis we consider the problem of face fiducial detection and face frontalization whose approach are 
-used as pre-processing steps.
+In this thesis, we concentrate on approaches and applications concerning face images. Vision community 
+has been working on problems such as face detection, face recognition, expression detection, gaze
+identification, face reenactment \etc., for a long time now. Also, we see these systems deployed in various 
+domains for practical use~\cite{kairos},~\cite{ms_emotion}. Most of the above solutions depends on pre-processing steps such as representation, face fiducial 
+detection, structural modeling \etc., which influences the effectiveness of the overall system to a great extent. 
+We want to further improve the effectiveness of fiducial detection and structural representation of face 
+which in-turn help in improving the accuracies of the above mentioned systems.
 
 % Face recognition pipeline
 % Problem
 % Solution
 Most challenging aspect of face recognition or verification system is to handle the variation in 
-pose. Assume if there is method to perfectly allign all the faces to one space such that the eyes,
-ears, nose, mouth \etc of all the faces fall on the same location, recognition and verification
+pose. Assume if there is method to perfectly align all the faces to one space such that the eyes,
+ears, nose, mouth \etc., of all the faces fall on the same location, recognition and verification
 can be done with a simple KNN approach. Schroff \etal ~\cite{conf/cvpr/SchroffKP15} relies on a purely data driven 
-approach to attain invariance to pose. This method is suitable when there is large data. 
+approach to attain in-variance to pose. This method is suitable when there is large data. 
 Zhenyao \etal \cite{DBLP:journals/corr/ZhuLWT14} employ a deep network to \textit{warp} faces into a canonical 
 frontal view and then learn CNN that classifies each face. Sun \etal~\cite{NIPS2014_5416} relies on 
 extracting features from different face patches to counter pose variation. Facial fiducials help in
 aligned feature representation as we could extract feature corresponding to various key points on 
 the face independent of overall pose and hence achieve invariability to pose. 
 
-Face expression detections such as Chew \etal \cite{conf/fgr/ChewLLSCS11}, Valstar \etal \cite{Valstar:2006:FAF:1153172.1153856} 
-use face fiducial detection as their starting point of the system. 
-
-Similarly for an expression 
-detection system, statistical distribution facial landmarks with each other helps in predecting 
-accurate expression. Even the gender detection system would need facial landmarks as their initial 
-point as fiducials are in general differently distributed for different gender.
+Facial expression recognition systems such as Chew \etal \cite{conf/fgr/ChewLLSCS11}, Valstar \etal \cite{Valstar:2006:FAF:1153172.1153856} 
+use face fiducial detection as their starting point of the system. Statistical distribution facial 
+landmarks with each other helps in predicting accurate expression. Similarly the gender detection system 
+would need facial landmarks as their initial point as fiducials are differently distributed 
+for different gender in general.
 
 % Consider a basic face recognition system. To have the representation of an individual's face as a 
 % model, we need to be sure the representation of face has to be aligned to get a meaningful model. 
 % Face fiducial detection is used as a pre-processing step to extract the features at the corresponding
 % locations while building the model. 
 
-Other pre-processing step which we discuss in this thesis is face frontalization. Given a profile
-view face, a frontal view face is synthesized. This approach helps in improving the accuracy of 
-face recognition system as the profile view faces would result in degraded performance. It is
-also used for face renactment where video of a person can be mimicked by replacing the face with
-another.
+We also address the problem of face frontalization. This approach helps in improving the accuracy of 
+face recognition system. Data is expensive. To obtain all possible poses of a given person to 
+come up with a model for recognition system is a tedious task. Models generated with fewer images
+of the person which predominantly includes frontal pose faces wouldn\textquotesingle t perform well on profile
+view test image. Approach proposed for face frontalization can also be used for face reenactment where 
+video of a person can be mimicked by replacing the face of another person.

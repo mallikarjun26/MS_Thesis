@@ -1,12 +1,12 @@
 Facial analysis in images for recognition/manipulation is a widely addressed and commercially important problem. 
 Its applications range from surveillance to automatic tagging of photos on social websites. 
 Recently, there are papers producing convincing results on {\em in-the-wild}
-datasets~\cite{xhucvpr12_wild,DBLP:journals/corr/HassnerHPE14}. These
+datasets~\cite{xhuCVPR12_wild,DBLP:journals/corr/HassnerHPE14}. These
 datasets differ from previous ones in their unconstrained nature of image capture.
 However such methods have two drawbacks. Firstly, a lot of these methods have degraded performance in profile view vs frontal view. 
 Secondly, they require lot of training data~\cite{HuLT14}. One way to alleviate both problems is to be able 
 to generate realistic frontal view faces for any person. This can be achieved, because faces have a definite 
-structure. Eigen analysis~\cite{Belhumeur:1997:EVF:261506.261512}, for example, has shown that faces exist in low dimensional sub spaces and can be represented as linear combinations of other faces. Also, it has been shown earlier that many face characteristics like expressions, hair etc. can be \emph{transferred} from one person to another, in a very realistic manner~\cite{conf/fgr/SaragihLC11a}.
+structure. Eigen analysis~\cite{Belhumeur:1997:EVF:261506.261512}, for example, has shown that faces exist in low dimensional sub spaces and can be represented as linear combinations of other faces. Also, it has been shown earlier that many face characteristics like expressions, hair \etc., can be \emph{transferred} from one person to another, in a very realistic manner~\cite{conf/fgr/SaragihLC11a}.
 
 \begin{figure}
 \begin{center}\includegraphics[width=11.0cm,height=2.8cm]{front/figures/sample_result_f.png}\end{center}
@@ -65,5 +65,5 @@ individuals with similar face structures to an input profile image is thus very 
 match, the frontal view of the person in the database can then be used to frontalize the input
 image.  Therefore, for our method, we collect a database 
 of profile views and corresponding frontal view of a large number of individuals. We leverage the fact that 
-faces lie in a low dimensional subspace and thus, many characteristics, like pose, expressions, etc.
+faces lie in a low dimensional subspace and thus, many characteristics, like pose, expressions, \etc.,
 are transferable between people.

@@ -10,7 +10,7 @@
 Alon Halevy, Peter Norvig, and Fernando Pereira,
 “The Unreasonable Effectiveness of Data” (Google, 2009)
 }
-“Represent all the data with a nonparametric model rather than trying to
+“Represent all the data with a non-parametric model rather than trying to
 summarize it with a parametric model, because with very large data sources, the
 data holds a lot of detail... Now go out and gather some data, and see what it can
 do.”
@@ -18,9 +18,9 @@ do.”
 
 The above statement is more so true when the data at hand is diverse at many fronts. In our case, 
 the data is the face images which can have variations in terms of age, gender, expression, pose, 
-facial structure etc. Trying to come up with a parametric model which holds all these information
+facial structure \etc. Trying to come up with a parametric model which holds all these information
 leads to poorly performing systems. Also whenever there is new data, the model has to be updated
-which is not so efficient. Rather its better to go with the data driven solutions.
+which is not so efficient. Rather it is better to go with the data driven solutions.
 
 Consider coming up with a generic model which represents an eye. Since the model has to perform
 in all different scenarios, we need to train the model with all possible variations. The samples
@@ -28,7 +28,14 @@ could have variations with respect to the type of eyes, open or closed, visible 
 frontal or profile view. When these samples are represented in appearance space, they end up in 
 subspaces far apart. Training a model to capture all the above variations will be difficult. We
 could think of coming up with separate model for each of the variation above, but coming up with 
-the labelled data for all these variations is tedious task. 
+the labeled data for all these variations is tedious task. 
+
+Classical Exemplar theory in psychology about the way humans categorize objects state that individual
+make category decision by comparing the new stimuli with the instaces already existing in memory.
+The instances in memory are called exemplars. Other way to accomplish the same task is based 
+on learnt rules. In this thesis, we explore the exemplar based approach for problems concerning 
+face images because learning a faithful model of such high dimensional data from limited samples
+is a challenging task. And also to exploit the available semantically annotated data for our advantage.
 
 For face fiducial detection, we employ exemplar based approach to select the best solution 
 from among outputs of regression and mixture of trees based algorithms (which we call candidate 
@@ -37,7 +44,7 @@ identify the most accurate fiducial outputs from a set of results produced by ca
 on any given test image. We also propose two different ways in which the exemplars can be selected
 and provide analysis of how the performance is affected in choosing between two methods.
 
-For face frontalizatio, we employ an exemplar based approach to find the transformation that relates 
+For face frontalization, we employ an exemplar based approach to find the transformation that relates 
 the profile view to the frontal view, and use it to generate realistic frontalizations. Our method 
 does not involve estimating 3D model of the face, which is a common approach in previous work in 
 this area. This leads to an efficient solution, since we avoid the complexity of adding one more 

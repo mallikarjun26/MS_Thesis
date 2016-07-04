@@ -8,5 +8,4 @@ latex
 **/*.lot
 **/*.toc
 **/*.dvi
-
-
+**/*.bbl

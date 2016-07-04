@@ -16,9 +16,9 @@ a linear objective function. The solution space is a convex polytope. Linear
 optimization problem can be canonically represented as
 
 \begin{equation}
-O(x) = \arg\max_x(c_Tx)
+O(x) = \arg\max_x(c^Tx)
 \end{equation}
-subjected to $Ax < b$ and $x>=0$. Where $x$ is the variable vector, $A$ is a
+subjected to $Ax \leq b$ and $x \geq 0$. Where $x$ is the variable vector, $A$ is a
 matrix and $b$ is vector which defines the solution space. There are various
 algorithms like \textit{Simplex algorithm, Criss-Cross algorithm, Interior 
 point method}, which can solve for global optimum.
@@ -30,7 +30,7 @@ formulated as follows,
 \begin{equation}
 O(x) = \arg\max_x{(\frac{1}{2}x^TQx + c^Tx)}
 \end{equation}
-subjected to $Ax < b$. $Q$ is real symmetric matrix. Similar to linear programming,
+subjected to $Ax \leq b$. $Q$ is real symmetric matrix. Similar to linear programming,
 there are many algorithms like \textit{Interior point, gradient projection, conjugate
 gradient} to solve general problems.
 

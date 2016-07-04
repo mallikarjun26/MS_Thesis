@@ -10,8 +10,8 @@ transformations to achieve certain goal. The transformation of the defined plane
 rotations and scaling. This section provides mathematical formulation to address the various aspects of 
 handling transformations of planes.
 
-We use homogenous notation for representing points as it can address the most generic projective 
-transformations. Homogenous representation of a 2D point $(x, y)$ in Euclidean space is represented as 
+We use homogeneous notation for representing points as it can address the most generic projective 
+transformations. Homogeneous representation of a 2D point $(x, y)$ in Euclidean space is represented as 
 as a $3$ dimensional vector by adding a final coordinate of $1$, $(x, y, 1)^T$. A planar projective 
 transformation of $3$ dimensional vector by a non-singular $3 \times 3$ matrix is represented by,
 
@@ -39,15 +39,15 @@ x_3
 \label{eqn:homogenous}
 \]
 
-Based on the invariances in properties of transformations, there are $4$ sub groups under projective 
-transformations. They are isometries, similarity tranformations, affine transformations and projective
+Based on the in-variances in properties of transformations, there are $4$ sub groups under projective 
+transformations. They are isometrics, similarity transformations, affine transformations and projective
 transformations. 
 
-Isometric trasformation is composition of just translation and rotation. Here the length 
-(the distance between two points), angle (between two lines) and area is preserved. Similarity tranformations
-preserves the form and is composed of isometric scaling along with translation and rotation. Invariances
+Isometric transformation is composition of just translation and rotation. Here the length 
+(the distance between two points), angle (between two lines) and area is preserved. Similarity transformations
+preserves the form and is composed of isometric scaling along with translation and rotation. In-variances
 include angle, parallelity, ratio of lengths. Both isometrics and similarity transformations require two
-point correspondences to compute tranformation matrix. Affine transformation is a non-singular linear
+point correspondences to compute transformation matrix. Affine transformation is a non-singular linear
 transformation followed by a translation which has $6$ degrees of freedom and can be thought of as a 
 combination of rotations and non-isotropic scalings along with translation. It requires $3$ point 
 correspondences to compute the transformation matrix. In this case, parallel lines are preserved along with the
@@ -60,7 +60,7 @@ transformation matrix.
     \includegraphics[width=6in, height=1.8in]{concepts/figures/affine_transformation.png}
     \caption{Pictorial representation of various transformations. (\textit{a}) \textbf{Similarity:} Observe the patterns preserved such as circular pattern, square shaped tiles, parallel and perpendicular lines.
     (\textit{b}) \textbf{Affine:} In this case, circles are imaged as ellipses, orthogonal lines are no more orthogonal, but the parallel lines are
-    preserved. (\textit{c}) \textbf{Projective:} Area of tiles closer to camera is larger than the ones away and parallel world lines are converging. Image courtesy: Mutiple View Geometry in Computer Vision\cite{Hartley2004}}
+    preserved. (\textit{c}) \textbf{Projective:} Area of tiles closer to camera is larger than the ones away and parallel world lines are converging. Image courtesy: Multiple View Geometry in Computer Vision\cite{Hartley2004}}
     \label{fig:affine_transformation}
 \end{figure}
 

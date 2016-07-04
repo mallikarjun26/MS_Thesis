@@ -118,6 +118,7 @@ more exemplars should typically mean that the nearest neighbor
 variations in pose, expression, partial occlusion have been already captured, increasing the number
 of exemplars will have minimal effect on accuracy. This is precisely what we observe in
 Figure~\ref{fig:num_exemplars}.
+
 \textbf{Optimization with structural costs}
 \label{subsec:with_without_structural_costs}
 In this experiment, we show qualitative result of output selection by optimization with and without
@@ -129,8 +130,8 @@ appearance costs are used, it leads to just selecting best looking fiducials ind
   \includegraphics[width=3.0in,height=2.5in]{fid/figures/iccv_version_one/cofw/num_of_exemplars/mean_err_modified.jpg}
   \includegraphics[width=3.0in,height=2.5in]{fid/figures/iccv_version_one/cofw/num_of_exemplars/fail_rate_modified.jpg}
   \caption{ Comparison of mean error and failure rate when the number of exemplars is increased.
-  Results O1-O5 correspond to our algorithm with number of exemplars (20, 30, 40, 50, 60)
-  respectively.
+  Results O1-O5 correspond to our algorithm with number of exemplars (20, 30, 40, 50, 60) respectively. 
+  C, X, I and R corresponds to Chehra, Deva, Intraface and RCPR respectievely.
   Best viewed in color. }
   \label{fig:num_exemplars}
 \end{figure}
@@ -204,7 +205,8 @@ results.
   \includegraphics[width=3.0in,height=2.5in]{fid/figures/iccv_version_one/cofw/kmeans_shape_vs_kmeans_pca/mean_err_modified.jpg}
   \includegraphics[width=3.0in,height=2.5in]{fid/figures/iccv_version_one/cofw/kmeans_shape_vs_kmeans_pca/fail_rate_modified.jpg}
   \caption{ Comparison of exemplars for kmeans vs PCA. O1 represents our basic result and O2
-  represents PCA based results. Best viewed in color }
+  represents PCA based results. Best viewed in color 
+  C, X, I and R corresponds to Chehra, Deva, Intraface and RCPR respectievely. }
   \label{fig:kmeans_vs_pca}
 \end{figure}
 % 
@@ -217,9 +219,9 @@ results.
 % %%%   \caption{Results on the COFW dataset.}
 % %%% \end{table}  
 % 
+
 \textbf{Euclidean distance vs Metric Learning}
 \label{subsec:euc_vs_metric}
-
 We also performed an experiment to compare the performance of our algorithm when we use euclidean distance and
 Mahalanobis distance to find the similarity score between candidate results on a test image and exemplars. 
 We learn the transformation matrix based on~\cite{weinberger09distance}. Metric is learnt with the objective of
@@ -232,6 +234,9 @@ to compute the similarity score for each of the part prediction in the test samp
 the exemplar. We use 200 samples for each part with the feature dimension of 535. 
 We note that insignificant improvement is obtained using metric learning.
 Figure ~\ref{fig:metric_learning} shows the failure rate analysis of different datasets. 
+We believe since the appearance representation of fiducials are too diverse for the metric to capture
+meaningful statistical information, metric learning failed to perform better than the simple Euclidean metric.
+
 %We see similarity score computed
 %using Euclidean distance performs consistently better compared to Mahalanobis distance. Also observe
 %that the more challenging the dataset gets, worse the failure rate using Mahalanobis distance. Hence
@@ -242,6 +247,8 @@ Figure ~\ref{fig:metric_learning} shows the failure rate analysis of different d
   \centering
   \includegraphics[width=3.0in,height=2.5in]{fid/figures/iccv_version_one/cofw/wo_metric_vs_w_metric/mean_err_modified.jpg}
   \includegraphics[width=3.0in,height=2.5in]{fid/figures/iccv_version_one/cofw/wo_metric_vs_w_metric/fail_rate_modified.jpg}
-  \caption{ Comparison of Metric Learning Result. O1 represents our results with Euclidean metric and O2 with learnt metric.}
+  \caption{ Comparison of Metric Learning Result. O1 represents our results with Euclidean metric and O2 with learnt metric.
+  C, X, I and R corresponds to Chehra, Deva, Intraface and RCPR respectievely.
+  }
   \label{fig:metric_learning}
 \end{figure}
